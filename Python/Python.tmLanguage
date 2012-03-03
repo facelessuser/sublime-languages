@@ -729,6 +729,14 @@
 			<string>#builtin_types</string>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>#magic_function_names</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#language_variables</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>(?:[a-zA-Z_][a-zA-Z_0-9]*\.)*([a-zA-Z_][a-zA-Z_0-9]*)\s*(?=\()</string>
 			<key>beginCaptures</key>
@@ -1163,7 +1171,7 @@
 		<key>builtin_functions</key>
 		<dict>
 			<key>match</key>
-			<string>(?x)\b(
+			<string>(?x)(?&lt;!\.)\b(
                 __import__|all|abs|any|apply|callable|chr|cmp|coerce|compile|delattr|dir|
                 divmod|eval|execfile|filter|getattr|globals|hasattr|hash|hex|id|
                 input|intern|isinstance|issubclass|iter|len|locals|map|max|min|oct|
@@ -1176,7 +1184,7 @@
 		<key>builtin_types</key>
 		<dict>
 			<key>match</key>
-			<string>(?x)\b(
+			<string>(?x)(?&lt;!\.)\b(
 				basestring|bool|buffer|classmethod|complex|dict|enumerate|file|
 				float|frozenset|int|list|long|object|open|property|reversed|set|
 				slice|staticmethod|str|super|tuple|type|unicode|xrange
@@ -1511,7 +1519,7 @@
 		<key>language_variables</key>
 		<dict>
 			<key>match</key>
-			<string>\b(self|cls)\b</string>
+			<string>(?&lt;!\.)\b(self|cls)\b</string>
 			<key>name</key>
 			<string>variable.language.python</string>
 		</dict>
