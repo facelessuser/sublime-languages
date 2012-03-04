@@ -1068,10 +1068,16 @@
 		</dict>
 		<key>sizeof</key>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.sizeof.c</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>\b(sizeof)\b</string>
-			<key>name</key>
-			<string>keyword.operator.sizeof.c</string>
+			<string>(?:\s*)\b(sizeof)\b(\s*\()?</string>
 		</dict>
 		<key>string_escaped_char</key>
 		<dict>
