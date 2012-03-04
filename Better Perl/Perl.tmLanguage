@@ -1041,9 +1041,24 @@
 					<key>name</key>
 					<string>punctuation.definition.string.perl</string>
 				</dict>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>string.regexp.find-m.perl</string>
+				</dict>
+				<key>7</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.perl</string>
+				</dict>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.regexp-option.perl</string>
+				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(m)\s*(?&lt;!\\)([^\[\{\(A-Za-z0-9\s])(.*?)(?&lt;!\\)(\\{2})*(\2)</string>
+			<string>\b(m)\s*(?&lt;!\\)([^\[\{\(A-Za-z0-9\s])(.*?)(?&lt;!\\)(\\{2})*(\2)((([egimos]*)))(?=([\}\)\;\,]|\s+|$))</string>
 			<key>name</key>
 			<string>string.regexp.find-m.perl</string>
 		</dict>
