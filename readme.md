@@ -1,6 +1,19 @@
 # Language Notes
 
 ## Fixed and Mods
+When using these languages, you can disable the default version of the languages in the Preferences.sublime-settings.
+
+Example:
+
+    "ignored_packages":
+    [
+        "Python",
+        "Batch File",
+        "JavaScript",
+        "Perl",
+        "C++",
+        "PHP"
+    ],
 
 ### Javascript
 - Fix some function related highlighting bugs
