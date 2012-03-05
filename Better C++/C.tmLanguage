@@ -522,7 +522,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>support.function.any-method.c</string>
+							<string>support.function.any-method.c meta.function-call.generic.c</string>
 						</dict>
 						<key>3</key>
 						<dict>
