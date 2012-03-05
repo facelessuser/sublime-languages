@@ -237,7 +237,7 @@
 			<key>match</key>
 			<string>[A-Za-z_][A-Za-z_0-9]*(?=\s*\()</string>
 			<key>name</key>
-			<string>meta.function-call.function-name.php</string>
+			<string>meta.function-call.generic.php</string>
 		</dict>
 		<key>instantiation</key>
 		<dict>

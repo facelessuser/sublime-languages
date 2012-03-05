@@ -748,7 +748,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>meta.function-call.function-name.python</string>
+					<string>meta.function-call.generic.python</string>
 				</dict>
 			</dict>
 			<key>end</key>

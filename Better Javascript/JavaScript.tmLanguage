@@ -613,7 +613,7 @@
 			<key>match</key>
 			<string>\b([A-Za-z_][A-Za-z0-9_]*)\b(?=\()</string>
 			<key>name</key>
-			<string>meta.function-call.function-name.js</string>
+			<string>meta.function-call.generic.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
