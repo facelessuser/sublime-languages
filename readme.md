@@ -1,4 +1,4 @@
-# Person Notes
+# Language Notes
 
 ## Fixed and Mods
 
