@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[${3:background-image: none;
+}filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1:${TM_SELECTED_TEXT:/images/transparent.png}}', sizingMethod='${2:image/scale/crop}');]]></content>
+    <tabTrigger>background</tabTrigger>
+    <scope>source.css</scope>
+    <description>filter: AlphaImageLoader [for IE PNGs]</description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[border-bottom-width: ${1:1}px ${2:solid} #${3:999};$0]]></content>
+    <tabTrigger>border</tabTrigger>
+    <scope>source.css</scope>
+    <description>border-bottom-width: size</description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[visibility: ${1:visible/hidden/collapse};$0]]></content>
+    <tabTrigger>visibility</tabTrigger>
+    <scope>source.css</scope>
+    <description>visibility: type</description>
+</snippet>

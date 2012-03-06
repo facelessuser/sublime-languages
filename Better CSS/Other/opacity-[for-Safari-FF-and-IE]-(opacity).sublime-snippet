@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[opacity: ${1:0.5};${100:
+}-moz-opacity: ${1:0.5};${100:
+}filter:alpha(opacity=${2:${1/(1?)0?\.(.*)/$1$2/}${1/^\d*\.\d\d+$|^\d*$|(^\d\.\d$)/(?1:0)/}});$0]]></content>
+    <tabTrigger>opacity</tabTrigger>
+    <scope>source.css</scope>
+    <description>opacity: [for Safari, FF &amp; IE]</description>
+</snippet>

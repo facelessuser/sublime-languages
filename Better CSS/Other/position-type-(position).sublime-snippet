@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[position: ${1:static/relative/absolute/fixed};$0]]></content>
+    <tabTrigger>position</tabTrigger>
+    <scope>source.css</scope>
+    <description>position: type</description>
+</snippet>

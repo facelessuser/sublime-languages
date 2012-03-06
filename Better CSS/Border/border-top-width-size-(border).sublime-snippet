@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[border-top-width: ${1:1}px]]></content>
+    <tabTrigger>border</tabTrigger>
+    <scope>source.css</scope>
+    <description>border-top-width: size</description>
+</snippet>

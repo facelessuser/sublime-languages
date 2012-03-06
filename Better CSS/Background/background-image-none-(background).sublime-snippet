@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[background-image: none;$0]]></content>
+    <tabTrigger>background</tabTrigger>
+    <scope>source.css</scope>
+    <description>background-image: none</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[${2:bottom: auto;}top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-${1:THE HEIGHT OF THIS THING IN PIXELS}));
+${3:left: expression(eval(document.documentElement.scrollLeft));
+}${4:width: expression(eval(document.documentElement.clientWidth));}$0]]></content>
+    <tabTrigger>fixed</tabTrigger>
+    <scope>source.css meta.property-list</scope>
+    <description>Fixed Position Bottom 100% wide IE6</description>
+</snippet>

@@ -43,6 +43,10 @@ Example:
 - Add scope for targeting function calls that are not system function calls
 - Ensure that dot function calls do not scope all parent memebers, but just the function call
 
+### CSS
+- Fix issue where things like (-moz|-o|-ms|-webkit) items would not highlight.
+- (-moz|-o|-ms|-webkit) items and properties
+
 ## Colorizing New Scopes
 
 ### To Colorize JSON Keys and Python Dictionary Keys ()

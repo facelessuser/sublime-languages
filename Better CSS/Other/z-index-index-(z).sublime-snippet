@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[z-index: $1;$0]]></content>
+    <tabTrigger>z</tabTrigger>
+    <scope>source.css</scope>
+    <description>z-index: index</description>
+</snippet>

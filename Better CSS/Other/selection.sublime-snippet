@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[$1::-moz-selection,
+$1::selection {
+	color: ${2:inherit};
+	background: ${3:inherit};
+}]]></content>
+    <tabTrigger>selection</tabTrigger>
+    <scope>source.css -meta.property-list</scope>
+    <description>selection</description>
+</snippet>
