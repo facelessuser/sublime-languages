@@ -1481,7 +1481,7 @@
 		<key>generic_object_names</key>
 		<dict>
 			<key>match</key>
-			<string>(\.\b([A-Za-z_][A-Za-z0-9_]*)\b(?!\()|\b([A-Za-z_][A-Za-z0-9_]*)\b\.)</string>
+			<string>(\.\b([A-Za-z_][A-Za-z0-9_]*)\b(?!\(|\[)|\b([A-Za-z_][A-Za-z0-9_]*)\b\.)</string>
 		</dict>
 		<key>illegal_names</key>
 		<dict>
