@@ -653,7 +653,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;=[\s\[\,=(:]|^|return|&amp;&amp;|\|\||!)\s*(/)(?![/*+{}?])</string>
+			<string>(?&lt;=[\s\[\,=(:]|^|return|&amp;&amp;|\|\||!)\s*(/)(?![/*+{}?]|[^/]*$)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
