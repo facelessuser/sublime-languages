@@ -488,6 +488,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#preprocessor-orphaned-block-end</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#sizeof</string>
 				</dict>
 				<dict>
@@ -863,6 +867,29 @@
 							<string>#pragma-mark</string>
 						</dict>
 					</array>
+				</dict>
+			</array>
+		</dict>
+		<key>preprocessor-orphaned-block-end</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>meta.preprocessor.c</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.import.c</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>^\s*(#\s*(endif)\b)</string>
 				</dict>
 			</array>
 		</dict>
