@@ -161,14 +161,14 @@
 		<dict>
 			<key>begin</key>
 			<string>(?x)
-        		^\s*\#\s*(define)\s+             # define
-        		((?&lt;id&gt;[a-zA-Z_][a-zA-Z0-9_]*))  # macro name
-        		(?:                              # and optionally:
-        		    (\()                         # an open parenthesis
+        		^\s*\#\s*(define)\s+        # define
+        		(([a-zA-Z_][a-zA-Z0-9_]*))  # macro name
+        		(?:                         # and optionally:
+        		    (\()                    # an open parenthesis
         		        (
-        		            \s* \g&lt;id&gt; \s*       # first argument
-        		            ((,) \s* \g&lt;id&gt; \s*)*  # additional arguments
-        		            (?:\.\.\.)?          # varargs ellipsis?
+        		            \s* ([a-zA-Z_][a-zA-Z0-9_]*) \s*         # first argument
+        		            ((,) \s* ([a-zA-Z_][a-zA-Z0-9_]*) \s*)*  # additional arguments
+        		            (?:,\s*\.\.\.\s*)?                       # varargs ellipsis?
         		        )
         		    (\))                         # a close parenthesis
         		)?
