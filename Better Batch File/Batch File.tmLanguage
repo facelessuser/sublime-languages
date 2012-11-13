@@ -22,7 +22,7 @@
                 <key>name</key>
                 <string>keyword.control.conditional.if.dosbatch</string>
                 <key>match</key>
-                <string>\b(?i)if\s+((not)\s+)(exist|defined|errorlevel|cmdextversion)\b</string>
+                <string>\b(?i)if\s+((not)\s+)((?:exist|defined|errorlevel|cmdextversion)\b)?</string>
             </dict>
             <dict>
                 <key>name</key>
@@ -31,10 +31,41 @@
                 <string>\b(?i)(?:if|else)\b</string>
             </dict>
             <dict>
+                <key>begin</key>
+                <string>\b(?i)(for)\b</string>
+                <key>beginCaptures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>keyword.control.repeat.dosbatch</string>
+                    </dict>
+                </dict>
+                <key>end</key>
+                <string>\b(do)\b</string>
+                <key>endCaptures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>keyword.control.repeat.dosbatch</string>
+                    </dict>
+                </dict>
                 <key>name</key>
-                <string>keyword.control.repeat.dosbatch</string>
-                <key>match</key>
-                <string>\b(?i)for\b</string>
+                <string></string>
+                <key>patterns</key>
+                <array>
+                    <dict>
+                        <key>include</key>
+                        <string>source.dosbatch</string>
+                    </dict>
+                    <dict>
+                        <key>name</key>
+                        <string>keyword.control.repeat.dosbatch</string>
+                        <key>match</key>
+                        <string>(?&lt;= )\b(?i)(in)\b(?= )</string>
+                    </dict>
+                </array>
             </dict>
             <dict>
                 <key>name</key>
@@ -43,10 +74,8 @@
                 <string>\b(?:EQU|NEQ|LSS|LEQ|GTR|GEQ)\b</string>
             </dict>
             <dict>
-                <key>name</key>
-                <string>variable.parameter.function.dosbatch</string>
-                <key>match</key>
-                <string>(%\d|%[A-Z-a-z][A-Za-z_\d]*%)</string>
+                <key>include</key>
+                <string>#variables</string>
             </dict>
             <dict>
                 <key>captures</key>
@@ -102,6 +131,13 @@
                 <string>string.quoted.double.dosbatch</string>
                 <key>end</key>
                 <string>"</string>
+                <key>patterns</key>
+                <array>
+                    <dict>
+                        <key>include</key>
+                        <string>#variables</string>
+                    </dict>
+                </array>
             </dict>
             <dict>
                 <key>name</key>
@@ -116,6 +152,21 @@
                 <string>&amp;&gt;|\d*&gt;&amp;\d*|\d*(&gt;&gt;|&gt;|&lt;)|\d*&lt;&amp;|\d*&lt;&gt;</string>
             </dict>
         </array>
+        <key>repository</key>
+        <dict>
+            <key>variables</key>
+            <dict>
+                <key>patterns</key>
+                <array>
+                    <dict>
+                        <key>name</key>
+                        <string>variable.parameter.function.dosbatch</string>
+                        <key>match</key>
+                        <string>((?&lt;!\^)%[\d\*]|((?&lt;!\^)%){2}[A-Za-z\d]|((?&lt;!\^)%){1,2}~[A-Za-z_\d]+|(?&lt;!\^)%[A-Za-z_\d]+(?&lt;!\^)%)</string>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
         <key>name</key>
         <string>Batch File</string>
         <key>scopeName</key>
