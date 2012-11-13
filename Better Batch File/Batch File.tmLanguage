@@ -10,7 +10,7 @@
                 <key>name</key>
                 <string>keyword.command.dosbatch</string>
                 <key>match</key>
-                <string>\b(?i)(?:append|assoc|at|attrib|break|cacls|cd|chcp|chdir|chkdsk|chkntfs|cls|cmd|color|comp|compact|convert|copy|date|del|dir|diskcomp|diskcopy|doskey|echo|endlocal|erase|fc|find|findstr|format|ftype|graftabl|help|keyb|label|md|mkdir|mode|more|move|path|pause|popd|print|prompt|pushd|rd|recover|rem|ren|rename|replace|restore|rmdir|set|setlocal|shift|sort|start|subst|time|title|tree|type|ver|verify|vol|xcopy)\b</string>
+                <string>\b(?i)(?:append|assoc|at|attrib|break|cacls|cd|chcp|chdir|chkdsk|chkntfs|cls|cmd|color|comp|compact|convert|copy|date|del|dir|diskcomp|diskcopy|doskey|echo|endlocal|erase|fc|find|findstr|format|ftype|graftabl|help|keyb|label|md|mkdir|mode|more|move|path|pause|popd|print|prompt|pushd|rd|recover|ren|rename|replace|restore|rmdir|set|setlocal|shift|sort|start|subst|time|title|tree|type|ver|verify|vol|xcopy)\b</string>
             </dict>
             <dict>
                 <key>name</key>
@@ -43,6 +43,12 @@
                 <string>\b(?:EQU|NEQ|LSS|LEQ|GTR|GEQ)\b</string>
             </dict>
             <dict>
+                <key>name</key>
+                <string>variable.parameter.function.dosbatch</string>
+                <key>match</key>
+                <string>(%\d|%[A-Z-a-z][A-Za-z_\d]*%)</string>
+            </dict>
+            <dict>
                 <key>captures</key>
                 <dict>
                     <key>1</key>
@@ -50,17 +56,28 @@
                         <key>name</key>
                         <string>keyword.command.rem.dosbatch</string>
                     </dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>comment.line.rem.dosbatch</string>
+                    </dict>
                 </dict>
                 <key>name</key>
-                <string>comment.line.rem.dosbatch</string>
+                <string></string>
                 <key>match</key>
-                <string>(?:^|\s)((?i)rem)(?:$|\s.*$)</string>
+                <string>(?:^|\s)@?((?i)rem)($|\s.*$)</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>comment.line.colons.dosbatch</string>
                 <key>match</key>
                 <string>\s*:\s*:.*$</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>entity.name.function.dosbatch</string>
+                <key>match</key>
+                <string>^\s*:\s*.*$</string>
             </dict>
             <dict>
                 <key>begin</key>
