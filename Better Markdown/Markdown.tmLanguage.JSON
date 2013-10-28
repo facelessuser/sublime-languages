@@ -13,7 +13,7 @@
         {
             "begin": "^```",
             "end": "^```",
-            "name": "markup.raw.block.markdown markup.fenced.block.markdown",
+            "name": "markup.raw.block.markdown",
             "patterns": [
                 {
                     "include": "#fenced-blocks"
@@ -325,7 +325,7 @@
         {
             "begin": "[ \\t]*(?i)(javascript|json|js)[ \\t]*$",
             "end": "^(?=```)",
-            "name": "meta.fenced.embedded-js.markdown",
+            "name": "markup.fenced.embedded-javascript.markdown",
             "patterns": [
                 {
                     "include": "source.js"
@@ -336,7 +336,7 @@
         {
             "begin": "[ \\t]*(?i)(python|py)[ \\t]*$",
             "end": "^(?=```)",
-            "name": "meta.fenced.embedded-py.markdown",
+            "name": "markup.fenced.embedded-python.markdown",
             "patterns": [
                 {
                     "include": "source.python"
@@ -347,7 +347,7 @@
         {
             "begin": "[ \\t]*(?i)(xml)[ \\t]*$",
             "end": "^(?=```)",
-            "name": "meta.fenced.embedded-xml.markdown",
+            "name": "markup.fenced.embedded-xml.markdown",
             "patterns": [
                 {
                     "include": "text.xml"
@@ -358,7 +358,7 @@
         {
             "begin": "[ \\t]*(?i)(html|html5)[ \\t]*$",
             "end": "^(?=```)",
-            "name": "meta.fenced.embedded-html.markdown",
+            "name": "markup.fenced.embedded-html.markdown",
             "patterns": [
                 {
                     "include": "text.xml"
@@ -369,7 +369,7 @@
         {
             "begin": "[ \\t]*(?i)(php)[ \\t]*$",
             "end": "^(?=```)",
-            "name": "meta.fenced.embedded-php.markdown",
+            "name": "markup.fenced.embedded-php.markdown",
             "patterns": [
                 {
                     "include": "source.php"
@@ -380,7 +380,7 @@
         {
             "begin": "[ \\t]*(?i)(diff)[ \\t]*$",
             "end": "^(?=```)",
-            "name": "meta.fenced.embedded-diff.markdown",
+            "name": "markup.fenced.embedded-diff.markdown",
             "patterns": [
                 {
                     "include": "source.diff"
@@ -391,7 +391,7 @@
         {
             "begin": "[ \\t]*(?i)(css)[ \\t]*$",
             "end": "^(?=```)",
-            "name": "meta.fenced.embedded-css.markdown",
+            "name": "markup.fenced.embedded-css.markdown",
             "patterns": [
                 {
                     "include": "source.css"
@@ -402,7 +402,7 @@
         {
             "begin": "[ \\t]*(?i)(perl)[ \\t]*$",
             "end": "^(?=```)",
-            "name": "meta.fenced.embedded-perl.markdown",
+            "name": "markup.fenced.embedded-perl.markdown",
             "patterns": [
                 {
                     "include": "source.perl"

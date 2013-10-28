@@ -33,7 +33,7 @@
 			<key>end</key>
 			<string>^```</string>
 			<key>name</key>
-			<string>markup.raw.block.markdown markup.fenced.block.markdown</string>
+			<string>markup.raw.block.markdown</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -600,7 +600,7 @@
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>meta.fenced.embedded-css.markdown</string>
+			<string>markup.fenced.embedded-css.markdown</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -616,7 +616,7 @@
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>meta.fenced.embedded-diff.markdown</string>
+			<string>markup.fenced.embedded-diff.markdown</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -632,7 +632,7 @@
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>meta.fenced.embedded-html.markdown</string>
+			<string>markup.fenced.embedded-html.markdown</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -648,7 +648,7 @@
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>meta.fenced.embedded-js.markdown</string>
+			<string>markup.fenced.embedded-javascript.markdown</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -664,7 +664,7 @@
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>meta.fenced.embedded-perl.markdown</string>
+			<string>markup.fenced.embedded-perl.markdown</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -680,7 +680,7 @@
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>meta.fenced.embedded-php.markdown</string>
+			<string>markup.fenced.embedded-php.markdown</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -696,7 +696,7 @@
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>meta.fenced.embedded-py.markdown</string>
+			<string>markup.fenced.embedded-python.markdown</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -712,7 +712,7 @@
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>meta.fenced.embedded-xml.markdown</string>
+			<string>markup.fenced.embedded-xml.markdown</string>
 			<key>patterns</key>
 			<array>
 				<dict>
