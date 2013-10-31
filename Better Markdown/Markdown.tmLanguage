@@ -555,6 +555,22 @@
 			<key>name</key>
 			<string>constant.character.escape.markdown</string>
 		</dict>
+		<key>fenced-bash</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(bash)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-bash.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.shell</string>
+				</dict>
+			</array>
+		</dict>
 		<key>fenced-blocks</key>
 		<dict>
 			<key>patterns</key>
@@ -593,7 +609,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#fenced-shell</string>
+					<string>#fenced-bash</string>
 				</dict>
 			</array>
 		</dict>
@@ -706,22 +722,6 @@
 				<dict>
 					<key>include</key>
 					<string>source.python</string>
-				</dict>
-			</array>
-		</dict>
-		<key>fenced-shell</key>
-		<dict>
-			<key>begin</key>
-			<string>[ \t]*(?i)(shell)[ \t]*$</string>
-			<key>end</key>
-			<string>^(?=```)</string>
-			<key>name</key>
-			<string>markup.fenced.embedded-shell.markdown</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.shell</string>
 				</dict>
 			</array>
 		</dict>

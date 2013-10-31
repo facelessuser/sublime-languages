@@ -320,7 +320,7 @@
                     "include": "#fenced-perl"
                 },
                 {
-                    "include": "#fenced-shell"
+                    "include": "#fenced-bash"
                 }
             ]
         },
@@ -412,11 +412,11 @@
                 }
             ]
         },
-        "fenced-shell":
+        "fenced-bash":
         {
-            "begin": "[ \\t]*(?i)(shell)[ \\t]*$",
+            "begin": "[ \\t]*(?i)(bash)[ \\t]*$",
             "end": "^(?=```)",
-            "name": "markup.fenced.embedded-shell.markdown",
+            "name": "markup.fenced.embedded-bash.markdown",
             "patterns": [
                 {
                     "include": "source.shell"
