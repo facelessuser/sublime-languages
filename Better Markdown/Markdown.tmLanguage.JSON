@@ -318,6 +318,9 @@
                 },
                 {
                     "include": "#fenced-perl"
+                },
+                {
+                    "include": "#fenced-shell"
                 }
             ]
         },
@@ -406,6 +409,17 @@
             "patterns": [
                 {
                     "include": "source.perl"
+                }
+            ]
+        },
+        "fenced-shell":
+        {
+            "begin": "[ \\t]*(?i)(shell)[ \\t]*$",
+            "end": "^(?=```)",
+            "name": "markup.fenced.embedded-shell.markdown",
+            "patterns": [
+                {
+                    "include": "source.shell"
                 }
             ]
         },

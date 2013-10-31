@@ -591,6 +591,10 @@
 					<key>include</key>
 					<string>#fenced-perl</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-shell</string>
+				</dict>
 			</array>
 		</dict>
 		<key>fenced-css</key>
@@ -702,6 +706,22 @@
 				<dict>
 					<key>include</key>
 					<string>source.python</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-shell</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(shell)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-shell.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.shell</string>
 				</dict>
 			</array>
 		</dict>

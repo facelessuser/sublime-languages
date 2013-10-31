@@ -51,7 +51,7 @@ Example:
 
 ### Markdown (Still more to do)
 - Add fenced blocks
-- Import source highlighting for python, javascript, json, xml, html, php, css, diff, perl (more to come)
+- Import source highlighting for python, javascript, json, xml, html, php, css, diff, perl, shell (more to come)
 - Enable wrapping by default
 
 ## Colorizing New Scopes
