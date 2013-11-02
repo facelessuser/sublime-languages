@@ -6,14 +6,13 @@
 	<string>E3BADC20-6B0E-11D9-9DC9-000D93589AF6</string>
 	<key>comment</key>
 	<string>
-    todo:
-        list comprehension / generator comprehension scope.
+	todo:
+		list comprehension / generator comprehension scope.
 
-    </string>
+	</string>
 	<key>fileTypes</key>
 	<array>
 		<string>py</string>
-		<string>py3</string>
 		<string>rpy</string>
 		<string>pyw</string>
 		<string>cpy</string>
@@ -34,48 +33,6 @@
 	<string>Python</string>
 	<key>patterns</key>
 	<array>
-		<dict>
-			<key>match</key>
-			<string>^In</string>
-			<key>name</key>
-			<string>support.ipython.in</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>^Out</string>
-			<key>name</key>
-			<string>support.ipython.out</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(meta|models)\.(Admin|AutoField|BooleanField|CharField|CommaSeparatedIntegerField|DateField|DateTimeField|DecimalField|EmailField|FileField|FilePathField|FloatField|ForeignKey|ImageField|IntegerField|IPAddressField|ManyToManyField|NullBooleanField|OneToOneField|PhoneNumberField|PositiveIntegerField|PositiveSmallIntegerField|SlugField|SmallIntegerField|TextField|TimeField|URLField|USStateField|XMLField)\b</string>
-			<key>name</key>
-			<string>support.type.django.model</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>django(\.[a-zA-Z0-9_]+){0,} </string>
-			<key>name</key>
-			<string>support.other.django.module</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(ABSOLUTE_URL_OVERRIDES|ADMIN_FOR|ADMIN_MEDIA_PREFIX|ADMINS|ALLOWED_HOSTS|ALLOWED_INCLUDE_ROOTS|APPEND_SLASH|ATOMIC_REQUESTS|AUTH_PROFILE_MODULE|AUTH_USER_MODEL|AUTHENTICATION_BACKENDS|AUTOCOMMIT|BACKEND|CACHE_BACKEND|CACHE_MIDDLEWARE_ALIAS|CACHE_MIDDLEWARE_ANONYMOUS_ONLY|CACHE_MIDDLEWARE_KEY_PREFIX|CACHE_MIDDLEWARE_SECONDS|CACHES|COMMENT_MAX_LENGTH|COMMENTS_APP|COMMENTS_HIDE_REMOVED|CONN_MAX_AGE|CSRF_COOKIE_DOMAIN|CSRF_COOKIE_HTTPONLY|CSRF_COOKIE_NAME|CSRF_COOKIE_PATH|CSRF_COOKIE_SECURE|CSRF_FAILURE_VIEW|DATABASE_ENGINE|DATABASE_HOST|DATABASE_NAME|DATABASE_OPTIONS|DATABASE_PASSWORD|DATABASE_PORT|DATABASE_ROUTERS|DATABASE_USER|DATABASES|DATE_FORMAT|DATE_INPUT_FORMATS|DATETIME_FORMAT|DATETIME_INPUT_FORMATS|DEBUG|DEBUG_PROPAGATE_EXCEPTIONS|DECIMAL_SEPARATOR|DEFAULT_CHARSET|DEFAULT_CONTENT_TYPE|DEFAULT_EXCEPTION_REPORTER_FILTER|DEFAULT_FILE_STORAGE|DEFAULT_FROM_EMAIL|DEFAULT_INDEX_TABLESPACE|DEFAULT_TABLESPACE|DISALLOWED_USER_AGENTS|EMAIL_BACKEND|EMAIL_FILE_PATH|EMAIL_HOST|EMAIL_HOST_PASSWORD|EMAIL_HOST_USER|EMAIL_PORT|EMAIL_SUBJECT_PREFIX|EMAIL_USE_TLS|ENGINE|FILE_CHARSET|FILE_UPLOAD_HANDLERS|FILE_UPLOAD_MAX_MEMORY_SIZE|FILE_UPLOAD_PERMISSIONS|FILE_UPLOAD_TEMP_DIR|FIRST_DAY_OF_WEEK|FIXTURE_DIRS|FORCE_SCRIPT_NAME|FORMAT_MODULE_PATH|HOST|IGNORABLE_404_ENDS|IGNORABLE_404_STARTS|IGNORABLE_404_URLS|INSTALLED_APPS|INTERNAL_IPS|JING_PATH|KEY_FUNCTION|KEY_PREFIX|LANGUAGE_CODE|LANGUAGE_COOKIE_NAME|LANGUAGES|LOCALE_PATHS|LOCATION|LOGGING|LOGGING_CONFIG|LOGIN_REDIRECT_URL|LOGIN_URL|LOGOUT_URL|MANAGERS|MEDIA_ROOT|MEDIA_URL|MESSAGE_LEVEL|MESSAGE_STORAGE|MESSAGE_TAGS|MIDDLEWARE_CLASSES|MONTH_DAY_FORMAT|NAME|NUMBER_GROUPING|OPTIONS|OPTIONS|PASSWORD|PASSWORD_HASHERS|PASSWORD_RESET_TIMEOUT_DAYS|PORT|PREPEND_WWW|PROFANITIES_LIST|RESTRUCTUREDTEXT_FILTER_SETTINGS|ROOT_URLCONF|SECRET_KEY|SECURE_PROXY_SSL_HEADER|SEND_BROKEN_LINK_EMAILS|SERIALIZATION_MODULES|SERVER_EMAIL|SESSION_CACHE_ALIAS|SESSION_COOKIE_AGE|SESSION_COOKIE_DOMAIN|SESSION_COOKIE_HTTPONLY|SESSION_COOKIE_NAME|SESSION_COOKIE_PATH|SESSION_COOKIE_SECURE|SESSION_ENGINE|SESSION_ENGINE|SESSION_EXPIRE_AT_BROWSER_CLOSE|SESSION_FILE_PATH|SESSION_SAVE_EVERY_REQUEST|SESSION_SERIALIZER|SHORT_DATE_FORMAT|SHORT_DATETIME_FORMAT|SIGNING_BACKEND|SITE_ID|STATIC_ROOT|STATIC_URL|STATICFILES_DIRS|STATICFILES_FINDERS|STATICFILES_STORAGE|TEMPLATE_CONTEXT_PROCESSORS|TEMPLATE_DEBUG|TEMPLATE_DIRS|TEMPLATE_LOADERS|TEMPLATE_STRING_IF_INVALID|TEST_CHARSET|TEST_COLLATION|TEST_CREATE|TEST_DATABASE_CHARSET|TEST_DATABASE_COLLATION|TEST_DATABASE_NAME|TEST_DEPENDENCIES|TEST_MIRROR|TEST_NAME|TEST_PASSWD|TEST_RUNNER|TEST_TBLSPACE|TEST_TBLSPACE_TMP|TEST_USER|TEST_USER_CREATE|THOUSAND_SEPARATOR|TIME_FORMAT|TIME_INPUT_FORMATS|TIME_ZONE|TIMEOUT|TRANSACTIONS_MANAGED|URL_VALIDATOR_USER_AGENT|USE_ETAGS|USE_I18N|USE_L10N|USE_THOUSAND_SEPARATOR|USE_TZ|USE_X_FORWARDED_HOST|USER|VERSION|WSGI_APPLICATION|X_FRAME_OPTIONS|YEAR_MONTH_FORMAT)\b</string>
-			<key>name</key>
-			<string>variable.other.django.settings</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(get_list_or_404|get_object_or_404|load_and_render|loader|render_to_response|render)\b</string>
-			<key>name</key>
-			<string>support.function.django.view</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>[a-z_]+\.get_(object|list|iterator|count|values|values_iterator|in_bulk)\b</string>
-			<key>name</key>
-			<string>support.function.django.model</string>
-		</dict>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -163,16 +120,33 @@
 			<string>constant.numeric.integer.decimal.python</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.modifier.global.python</string>
+				</dict>
+			</dict>
 			<key>match</key>
 			<string>\b(global)\b</string>
-			<key>name</key>
-			<string>storage.modifier.global.python</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.import.python</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.import.from.python</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>\b(?:(import|from|as))\b</string>
-			<key>name</key>
-			<string>keyword.control.import.python</string>
+			<string>\b(?:(import)|(from))\b</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -191,12 +165,18 @@
 			<string>keyword.operator.logical.python</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.python</string>
+				</dict>
+			</dict>
 			<key>comment</key>
 			<string>keywords that haven't fit into other groups (yet).</string>
 			<key>match</key>
-			<string>\b(assert)\b</string>
-			<key>name</key>
-			<string>keyword.other.python</string>
+			<string>\b(as|assert|del|exec|print)\b</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -414,13 +394,23 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(\:)</string>
+			<string>(\))\s*(?:(\:)|(.*$\n?))</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>punctuation.definition.parameters.end.python</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
 					<string>punctuation.section.function.begin.python</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.missing-section-begin.python</string>
 				</dict>
 			</dict>
 			<key>name</key>
@@ -456,20 +446,12 @@
 					<key>contentName</key>
 					<string>meta.function.parameters.python</string>
 					<key>end</key>
-					<string>(?=\)\s*(?:\:|-\&gt;))</string>
+					<string>(?=\)\s*\:)</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#annotated_arguments</string>
-						</dict>
-						<dict>
-							<key>include</key>
 							<string>#keyword_arguments</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#comments</string>
 						</dict>
 						<dict>
 							<key>captures</key>
@@ -487,32 +469,6 @@
 							</dict>
 							<key>match</key>
 							<string>\b([a-zA-Z_][a-zA-Z_0-9]*)\s*(?:(,)|(?=[\n\)]))</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>(\))\s*(\-&gt;)</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.parameters.end.python</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.separator.annotation.result.python</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>(?=\:)</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>$self</string>
 						</dict>
 					</array>
 				</dict>
@@ -1210,137 +1166,6 @@
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>annotated_arguments</key>
-		<dict>
-			<key>begin</key>
-			<string>\b([a-zA-Z_][a-zA-Z_0-9]*)\s*(:)|(?=\()</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.function.python</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.separator.annotation.python</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>\s*(?:(,)|(?=$\n?|[\)\:]))</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.separator.parameters.python</string>
-				</dict>
-			</dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#annotated_group</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>=</string>
-					<key>name</key>
-					<string>keyword.operator.assignment.python</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-			</array>
-		</dict>
-		<key>annotated_group</key>
-		<dict>
-			<key>begin</key>
-			<string>(\()</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.parameters-group.begin.python</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(\))</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.parameters-group.end.python</string>
-				</dict>
-			</dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>\b([a-zA-Z_][a-zA-Z_0-9]*)\s*(:)</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>variable.parameter.function.python</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.separator.annotation.python</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\s*(?:(,)|(?=$\n?|\)))</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.separator.parameters.python</string>
-						</dict>
-					</dict>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>$self</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>\b([a-zA-Z_][a-zA-Z_0-9]*)</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>variable.parameter.function.python</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>\s*(?:(,)|(?=$\n?|\)))</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.separator.parameters.python</string>
-						</dict>
-					</dict>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#comments</string>
-				</dict>
-			</array>
-		</dict>
 		<key>builtin_exceptions</key>
 		<dict>
 			<key>match</key>
@@ -1350,12 +1175,12 @@
                     Import|Indentation|Index|Key|Lookup|Memory|Name|NotImplemented|OS|Overflow|
                     Reference|Runtime|Standard|Syntax|System|Tab|Type|UnboundLocal|
                     Unicode(Encode|Decode|Translate)?|
-                    Value|VMS|Windows|ZeroDivision|([.a-zA-Z0-9_]+)
+                    Value|VMS|Windows|ZeroDivision
                 )Error|
                 ((Pending)?Deprecation|Runtime|Syntax|User|Future|Import|Unicode|Bytes)?Warning|
                 (Base)?Exception|
-                SystemExit|StopIteration|NotImplemented|KeyboardInterrupt|GeneratorExit|Exception
-            )\b</string>
+                SystemExit|StopIteration|NotImplemented|KeyboardInterrupt|GeneratorExit
+			)\b</string>
 			<key>name</key>
 			<string>support.type.exception.python</string>
 		</dict>
@@ -1363,13 +1188,12 @@
 		<dict>
 			<key>match</key>
 			<string>(?x)(?&lt;!\.)\b(
-                __import__|abs|all|any|apply|callable|chr|cmp|
-                coerce|compile|copyright|credits|del|delattr|dir|divmod|enumerate|eval|
-                exec|execfile|exit|filter|format|getattr|globals|hasattr|hash|help|id|
-                input|intern|isinstance|issubclass|iter|len|license|locals|map|max|memoryview|
-                min|next|open|ord|pow|print|property|quit|range|raw_input|reduce|reload|
-                repr|reversed|round|setattr|sorted|sum|unichr|vars|zip
-            )\b</string>
+                __import__|all|abs|any|apply|callable|chr|cmp|coerce|compile|delattr|dir|
+                divmod|eval|execfile|filter|getattr|globals|hasattr|hash|hex|id|
+                input|intern|isinstance|issubclass|iter|len|locals|map|max|min|oct|
+                ord|pow|range|raw_input|reduce|reload|repr|round|setattr|sorted|
+                sum|unichr|vars|zip
+			)\b</string>
 			<key>name</key>
 			<string>support.function.builtin.python</string>
 		</dict>
@@ -1377,19 +1201,12 @@
 		<dict>
 			<key>match</key>
 			<string>(?x)(?&lt;!\.)\b(
-                ascii|basestring|bin|bool|buffer|bytearray|bytes|classmethod|complex|dict|file|
-                float|frozenset|hex|int|list|long|object|oct|property|reversed|set|
-                slice|staticmethod|str|super|tuple|type|unicode|xrange
-            )\b</string>
+				basestring|bool|buffer|classmethod|complex|dict|enumerate|file|
+				float|frozenset|int|list|long|object|open|property|reversed|set|
+				slice|staticmethod|str|super|tuple|type|unicode|xrange
+			)\b</string>
 			<key>name</key>
 			<string>support.type.python</string>
-		</dict>
-		<key>comments</key>
-		<dict>
-			<key>match</key>
-			<string>(#).*$\n?</string>
-			<key>name</key>
-			<string>comment.line.number-sign.python</string>
 		</dict>
 		<key>constant_placeholder</key>
 		<dict>
@@ -1747,6 +1564,8 @@
 		</dict>
 		<key>magic_function_names</key>
 		<dict>
+			<key>comment</key>
+			<string>these methods have magic interpretation by python and are generally called indirectly through syntactic constructs</string>
 			<key>captures</key>
 			<dict>
 				<key>2</key>
@@ -1755,20 +1574,18 @@
 					<string>support.function.magic.python</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>these methods have magic interpretation by python and are generally called indirectly through syntactic constructs</string>
 			<key>match</key>
 			<string>(?x)(\.)?\b(__(?:
-                        abs|add|and|bool|call|cmp|coerce|complex|contains|del|delattr|
-                        delete|delitem|delslice|div|divmod|enter|eq|exit|float|
-                        floordiv|ge|get|getattr|getattribute|getitem|getslice|gt|
-                        hash|hex|iadd|iand|idiv|ifloordiv|ilshift|imod|imul|init|
-                        int|invert|ior|ipow|irshift|isub|iter|itruediv|ixor|le|len|
-                        long|lshift|lt|mod|mul|ne|neg|new|nonzero|oct|or|pos|pow|
-                        radd|rand|rdiv|rdivmod|repr|rfloordiv|rlshift|rmod|rmul|ror|
-                        rpow|rrshift|rshift|rsub|rtruediv|rxor|set|setattr|setitem|
-                        setslice|str|sub|truediv|unicode|xor
-                    )__)\b</string>
+						abs|add|and|call|cmp|coerce|complex|contains|del|delattr|
+						delete|delitem|delslice|div|divmod|enter|eq|exit|float|
+						floordiv|ge|get|getattr|getattribute|getitem|getslice|gt|
+						hash|hex|iadd|iand|idiv|ifloordiv|ilshift|imod|imul|init|
+						int|invert|ior|ipow|irshift|isub|iter|itruediv|ixor|le|len|
+						long|lshift|lt|mod|mul|ne|neg|new|nonzero|oct|or|pos|pow|
+						radd|rand|rdiv|rdivmod|repr|rfloordiv|rlshift|rmod|rmul|ror|
+						rpow|rrshift|rshift|rsub|rtruediv|rxor|set|setattr|setitem|
+						setslice|str|sub|truediv|unicode|xor
+					)__)\b</string>
 		</dict>
 		<key>magic_variable_names</key>
 		<dict>
