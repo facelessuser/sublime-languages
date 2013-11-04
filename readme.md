@@ -1,4 +1,5 @@
 # Language Notes
+This is a personal repository for languages I have that override the sublime default ones.  Though this repository wasn't meant for public use, all are welcome to use anything found here.  You can file issues if you want, but since I don't view this as a supported repo, I will pick and choose what to fix when I feel like it.
 
 ## Fixed and Mods
 When using these languages, you can disable the default version of the languages in the Preferences.sublime-settings.
@@ -44,6 +45,8 @@ Example:
 ### Python
 - Add scope for targeting function calls that are not system function calls
 - Ensure that dot function calls do not scope all parent memebers, but just the function call
+- Python 3 function annotations
+- Features ripped from https://github.com/MattDMo/PythonImproved MattDMo seems to be picking up where I left off; if you don't want to use all of my random languages, MattDMo's package is a good one to pick up.  He has taken my changes and is actively supporting new ones.
 
 ### CSS
 - Fix issue where things like (-moz|-o|-ms|-webkit) items would not highlight.
