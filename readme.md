@@ -29,11 +29,9 @@ Example:
 ### Batch File
 - Add Comment support for comment line shortcut
 
-### C++
-- Fix #define regex to work more reliably
+### C/C++/C++11
+- Based off of https://github.com/kodLite/cppStartingKit
 - Fix comments that trail some preprocessors like #endif etc.
-- Fix sizeof scope not getting set properly
-- Add scope for targeting function calls that are not system function calls
 
 ### Perl
 - Comment out regex that targets ```<<``` and breaks code it using bitwise ```<<``` operand
