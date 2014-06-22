@@ -21,6 +21,7 @@ Example:
 ### Javascript
 - Fix some function related highlighting bugs
 - Add scope for targeting function calls that are not system function calls
+- Fix some regex highlighting
 
 ### JSON
 - Add sublime-commands to file types
@@ -52,7 +53,28 @@ Example:
 
 ### Markdown (Still more to do)
 - Add fenced blocks
-- Import source highlighting for python, javascript, json, xml, html, php, css, diff, perl, shell (more to come)
+- Import source highlighting for embedded:
+    - python
+    - javascript
+    - json
+    - xml
+    - html
+    - php
+    - css
+    - diff
+    - perl
+    - bash
+    - java
+    - ini
+    - apacheconf
+    - clojure
+    - ruby
+    - applescript
+    - c++/c
+    - c#
+    - markdown (experimental)
+    - batchfile
+    - (more to come)
 - Enable wrapping by default
 
 ## Colorizing New Scopes

@@ -639,6 +639,10 @@
 					<key>include</key>
 					<string>#fenced-java</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-batchfile</string>
+				</dict>
 			</array>
 		</dict>
 		<key>fenced-bash</key>
@@ -1118,6 +1122,30 @@
 				<dict>
 					<key>include</key>
 					<string>source.java</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-batchfile</key>
+		<dict>
+			<key>begin</key>
+			<string>(?&lt;=```)[ \t]*(?i)(batchfile|bat|batch|dosbatch)[ \t]*$</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.language.markdown</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-batchfile.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.dosbatch</string>
 				</dict>
 			</array>
 		</dict>
