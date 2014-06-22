@@ -795,6 +795,10 @@
         </dict>
         <dict>
             <key>include</key>
+            <string>#docstrings</string>
+        </dict>
+        <dict>
+            <key>include</key>
             <string>#magic_function_names</string>
         </dict>
         <dict>
@@ -1768,10 +1772,6 @@
         </dict>
         <key>regular_expressions</key>
         <dict>
-            <key>comment</key>
-            <string>Changed disabled to 1 to turn off syntax highlighting in “r” strings.</string>
-            <key>disabled</key>
-            <integer>0</integer>
             <key>patterns</key>
             <array>
                 <dict>
