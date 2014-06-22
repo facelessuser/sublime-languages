@@ -581,6 +581,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#fenced-json</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#fenced-py</string>
 				</dict>
 				<dict>
@@ -610,6 +614,46 @@
 				<dict>
 					<key>include</key>
 					<string>#fenced-bash</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-apacheconf</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-applescript</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-cpp</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-csharp</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-ruby</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-makefile</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-markdown</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-clojure</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-ini</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#fenced-java</string>
 				</dict>
 			</array>
 		</dict>
@@ -664,7 +708,7 @@
 		<key>fenced-js</key>
 		<dict>
 			<key>begin</key>
-			<string>[ \t]*(?i)(javascript|json|js)[ \t]*$</string>
+			<string>[ \t]*(?i)(javascript|js)[ \t]*$</string>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
@@ -674,6 +718,22 @@
 				<dict>
 					<key>include</key>
 					<string>source.js</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-json</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(json)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-json.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.json</string>
 				</dict>
 			</array>
 		</dict>
@@ -728,7 +788,7 @@
 		<key>fenced-xml</key>
 		<dict>
 			<key>begin</key>
-			<string>[ \t]*(?i)(xml)[ \t]*$</string>
+			<string>[ \t]*(?i)(xml|rss|xsd|wsdl)[ \t]*$</string>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
@@ -738,6 +798,167 @@
 				<dict>
 					<key>include</key>
 					<string>text.xml</string>
+				</dict>
+			</array>
+		</dict>
+		<!-- new -->
+		<key>fenced-apacheconf</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(ApacheConf|apache)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-apacheconf.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.apacheconf</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-applescript</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(applescript|osascript)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-applescript.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.applescript</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-cpp</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(C|C++|cpp)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-cpp.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.c, source.c++</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-csharp</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(c#|csharp)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-csharp.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.cs</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-ruby</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(ruby|jruby|macruby|rake|rb|rbx)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-ruby.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.ruby</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-makefile</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(makefile|mak)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-makefile.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.makefile</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-markdown</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(markdown)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-markdown.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.html.markdown</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-clojure</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(clojure)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-clojure.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.clojure</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-ini</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(ini)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-ini.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.ini</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-java</key>
+		<dict>
+			<key>begin</key>
+			<string>[ \t]*(?i)(java)[ \t]*$</string>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-java.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.java</string>
 				</dict>
 			</array>
 		</dict>
