@@ -1367,69 +1367,81 @@
         </dict>
         <key>builtin_functions</key>
         <dict>
-            <key>begin</key>
-            <string>(?&lt;!\.)(__import__|ascii|abs|all|any|apply|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|copyright|credits|del|delattr|dict|dir|divmod|enumerate|eval|exec|execfile|exit|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|license|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|print|property|quit|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unicode|unichr|vars|xrange|zip)\s*(?=\()</string>
-            <key>beginCaptures</key>
-            <dict>
-                <key>1</key>
-                <dict>
-                    <key>name</key>
-                    <string>support.function.builtin.python, meta.function-call.generic.python</string>
-                </dict>
-            </dict>
-            <key>end</key>
-            <string>(\))</string>
-            <key>endCaptures</key>
-            <dict>
-                <key>1</key>
-                <dict>
-                    <key>name</key>
-                    <string>punctuation.definition.arguments.end.python</string>
-                </dict>
-            </dict>
-            <key>name</key>
-            <string>meta.function-call.python</string>
             <key>patterns</key>
             <array>
                 <dict>
                     <key>begin</key>
-                    <string>(?=[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)*\s*\()</string>
-                    <key>end</key>
-                    <string>(?=\s*\()</string>
-                    <key>patterns</key>
-                    <array>
-                        <dict>
-                            <key>include</key>
-                            <string>#dotted_name</string>
-                        </dict>
-                    </array>
-                </dict>
-                <dict>
-                    <key>begin</key>
-                    <string>(\()</string>
+                    <string>(?&lt;!\.)(__import__|ascii|abs|all|any|apply|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|copyright|credits|del|delattr|dict|dir|divmod|enumerate|eval|exec|execfile|exit|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|license|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|print|property|quit|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unicode|unichr|vars|xrange|zip)\s*(?=\()</string>
                     <key>beginCaptures</key>
                     <dict>
                         <key>1</key>
                         <dict>
                             <key>name</key>
-                            <string>punctuation.definition.arguments.begin.python</string>
+                            <string>support.function.builtin.python</string>
                         </dict>
                     </dict>
-                    <key>contentName</key>
-                    <string>meta.function-call.arguments.python</string>
                     <key>end</key>
-                    <string>(?=\))</string>
+                    <string>(\))</string>
+                    <key>endCaptures</key>
+                    <dict>
+                        <key>1</key>
+                        <dict>
+                            <key>name</key>
+                            <string>punctuation.definition.arguments.end.python</string>
+                        </dict>
+                    </dict>
+                    <key>name</key>
+                    <string>meta.function-call.python</string>
                     <key>patterns</key>
                     <array>
                         <dict>
-                            <key>include</key>
-                            <string>#keyword_arguments</string>
+                            <key>begin</key>
+                            <string>(?=[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)*\s*\()</string>
+                            <key>end</key>
+                            <string>(?=\s*\()</string>
+                            <key>patterns</key>
+                            <array>
+                                <dict>
+                                    <key>include</key>
+                                    <string>#dotted_name</string>
+                                </dict>
+                            </array>
                         </dict>
                         <dict>
-                            <key>include</key>
-                            <string>$self</string>
+                            <key>begin</key>
+                            <string>(\()</string>
+                            <key>beginCaptures</key>
+                            <dict>
+                                <key>1</key>
+                                <dict>
+                                    <key>name</key>
+                                    <string>punctuation.definition.arguments.begin.python</string>
+                                </dict>
+                            </dict>
+                            <key>contentName</key>
+                            <string>meta.function-call.arguments.python</string>
+                            <key>end</key>
+                            <string>(?=\))</string>
+                            <key>patterns</key>
+                            <array>
+                                <dict>
+                                    <key>include</key>
+                                    <string>#keyword_arguments</string>
+                                </dict>
+                                <dict>
+                                    <key>include</key>
+                                    <string>$self</string>
+                                </dict>
+                            </array>
                         </dict>
                     </array>
+                </dict>
+                <dict>
+                    <!-- Non function style print -->
+                    <key>match</key>
+                    <string>(?&lt;!\.)\b(print)\b</string>
+                    <key>name</key>
+                    <string>support.function.builtin.python</string>
                 </dict>
             </array>
         </dict>
