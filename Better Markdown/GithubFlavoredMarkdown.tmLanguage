@@ -395,6 +395,13 @@
 			<key>name</key>
 			<string>markup.raw.block.markdown.github</string>
 		</dict>
+		<key>emoji</key>
+		<dict>
+			<key>match</key>
+			<string>:[A-Za-z0-9]+:</string>
+			<key>name</key>
+			<string>markup.emoji.markdown.github</string>
+		</dict>
 		<key>strike</key>
 		<dict>
 			<key>begin</key>
@@ -483,6 +490,10 @@
 				<dict>
 					<key>include</key>
 					<string>#raw</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#emoji</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -610,6 +621,10 @@
 				<dict>
 					<key>include</key>
 					<string>#raw</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#emoji</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -855,6 +870,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#emoji</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#strike</string>
 				</dict>
 				<dict>
@@ -988,6 +1007,10 @@
 				<dict>
 					<key>include</key>
 					<string>#raw</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#emoji</string>
 				</dict>
 				<dict>
 					<key>include</key>

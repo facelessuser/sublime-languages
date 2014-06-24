@@ -58,7 +58,7 @@ Example:
     - supports fenced blocks
     - added strikedown scoping `markup.strikethrough`
     - adjusted logic for when bold/italic are highlighted
-    - TODO: Add emoji scoping
+    - emoji scoping for things like `:smile:`.  `markup.emoji`
 - Import source highlighting for embedded:
     - python
     - javascript
@@ -180,7 +180,7 @@ I like lists to be highlighted differently.  This can be done on the default mar
         </dict>
 ```
 
-### Highlight Bold, Italic, and Strikethrough (Github Flavored Only)
+### Highlight Bold, Italic, Strikethrough, Emoji (Github Flavored Only)
 ```xml
         <dict>
             <key>name</key>
@@ -217,6 +217,21 @@ I like lists to be highlighted differently.  This can be done on the default mar
                 <string>italic</string>
                 <key>foreground</key>
                 <string>#CC99CC</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markup: Emoji</string>
+            <key>scope</key>
+            <string>markup.emoji</string>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string></string>
+                <key>fontStyle</key>
+                <string></string>
+                <key>foreground</key>
+                <string>#F2777A</string>
             </dict>
         </dict>
 ```
