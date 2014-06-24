@@ -17,7 +17,7 @@
 					<key>end</key>
 					<string>^(\1)(?!`)</string>
 					<key>name</key>
-					<string>markup.raw.block.fenced</string>
+					<string>markup.raw.block.markdown.fenced</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -41,7 +41,7 @@
 					<key>end</key>
 					<string>^(\1)(?!`)</string>
 					<key>name</key>
-					<string>markup.raw.block.fenced</string>
+					<string>markup.raw.block.markdown.fenced</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -159,13 +159,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-bash.fenced</string>
+			<string>markup.embedded-bash.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -183,13 +183,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-css.fenced</string>
+			<string>markup.embedded-css.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -207,13 +207,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-diff.fenced</string>
+			<string>markup.embedded-diff.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -231,13 +231,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-html.fenced</string>
+			<string>markup.embedded-html.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -255,13 +255,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-javascript.fenced</string>
+			<string>markup.embedded-javascript.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -279,13 +279,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-json.fenced</string>
+			<string>markup.embedded-json.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -303,13 +303,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-perl.fenced</string>
+			<string>markup.embedded-perl.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -327,13 +327,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-php.fenced</string>
+			<string>markup.embedded-php.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -351,13 +351,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-python.fenced</string>
+			<string>markup.embedded-python.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -375,13 +375,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-xml.fenced</string>
+			<string>markup.embedded-xml.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -399,13 +399,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-apacheconf.fenced</string>
+			<string>markup.embedded-apacheconf.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -423,13 +423,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-applescript.fenced</string>
+			<string>markup.embedded-applescript.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -447,13 +447,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-cpp.fenced</string>
+			<string>markup.embedded-cpp.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -471,13 +471,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-csharp.fenced</string>
+			<string>markup.embedded-csharp.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -495,13 +495,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-ruby.fenced</string>
+			<string>markup.embedded-ruby.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -519,13 +519,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-makefile.fenced</string>
+			<string>markup.embedded-makefile.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -543,7 +543,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -554,7 +554,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>text.html.fenced</string>
+					<string>text.html.markdown.fenced</string>
 				</dict>
 			</array>
 		</dict>
@@ -567,13 +567,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-clojure.fenced</string>
+			<string>markup.embedded-clojure.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -591,13 +591,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-ini.fenced</string>
+			<string>markup.embedded-ini.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -615,13 +615,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-java.fenced</string>
+			<string>markup.embedded-java.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -639,13 +639,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-batchfile.fenced</string>
+			<string>markup.embedded-batchfile.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -663,13 +663,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.language.fenced</string>
+					<string>variable.language.markdown.fenced</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=```)</string>
 			<key>name</key>
-			<string>markup.embedded-erlang.fenced</string>
+			<string>markup.embedded-erlang.markdown.fenced</string>
 			<key>patterns</key>
 			<array>
 				<dict>

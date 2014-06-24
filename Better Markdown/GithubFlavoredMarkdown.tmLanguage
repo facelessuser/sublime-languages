@@ -46,7 +46,7 @@
 				|	[ ]{,3}(?&lt;marker&gt;[-*_])([ ]{,2}\k&lt;marker&gt;){2,}[ \t]*+$
 				)</string>
 			<key>name</key>
-			<string>meta.block-level.github.markdown</string>
+			<string>meta.block-level.markdown.github</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -75,13 +75,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.list_item.github.markdown</string>
+					<string>punctuation.definition.list_item.markdown.github</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=\S)</string>
 			<key>name</key>
-			<string>markup.list.unnumbered.github.markdown</string>
+			<string>markup.list.unnumbered.markdown.github</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -98,13 +98,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.list_item.github.markdown</string>
+					<string>punctuation.definition.list_item.markdown.github</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>^(?=\S)</string>
 			<key>name</key>
-			<string>markup.list.numbered.github.markdown</string>
+			<string>markup.list.numbered.markdown.github</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -155,67 +155,67 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.github.markdown</string>
+					<string>punctuation.definition.constant.markdown.github</string>
 				</dict>
 				<key>10</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.github.markdown</string>
+					<string>punctuation.definition.string.end.markdown.github</string>
 				</dict>
 				<key>11</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.description.title.github.markdown</string>
+					<string>string.other.link.description.title.markdown.github</string>
 				</dict>
 				<key>12</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 				<key>13</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.github.markdown</string>
+					<string>punctuation.definition.string.end.markdown.github</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>constant.other.reference.link.github.markdown</string>
+					<string>constant.other.reference.link.markdown.github</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.github.markdown</string>
+					<string>punctuation.definition.constant.markdown.github</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.separator.key-value.github.markdown</string>
+					<string>punctuation.separator.key-value.markdown.github</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>markup.underline.link.github.markdown</string>
+					<string>markup.underline.link.markdown.github</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 				<key>8</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.description.title.github.markdown</string>
+					<string>string.other.link.description.title.markdown.github</string>
 				</dict>
 				<key>9</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -233,7 +233,7 @@
 				$
 			)</string>
 			<key>name</key>
-			<string>meta.link.reference.def.github.markdown</string>
+			<string>meta.link.reference.def.markdown.github</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -241,7 +241,7 @@
 			<key>end</key>
 			<string>^(?:\s*$|(?=[ ]{,3}&gt;.))|(?=[ \t]*\n)(?&lt;=^===|^====|=====|^---|^----|-----)[ \t]*\n|(?=^#)|(?=^```)</string>
 			<key>name</key>
-			<string>meta.paragraph.github.markdown</string>
+			<string>meta.paragraph.markdown.github</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -258,13 +258,13 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.heading.github.markdown</string>
+							<string>punctuation.definition.heading.markdown.github</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>^(={3,})(?=[ \t]*$)</string>
 					<key>name</key>
-					<string>markup.heading.1.github.markdown</string>
+					<string>markup.heading.1.markdown.github</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -272,13 +272,13 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.heading.github.markdown</string>
+							<string>punctuation.definition.heading.markdown.github</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>^(-{3,})(?=[ \t]*$)</string>
 					<key>name</key>
-					<string>markup.heading.2.github.markdown</string>
+					<string>markup.heading.2.markdown.github</string>
 				</dict>
 			</array>
 		</dict>
@@ -295,7 +295,7 @@
 			<key>match</key>
 			<string>&amp;(?!([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+);)</string>
 			<key>name</key>
-			<string>meta.other.valid-ampersand.github.markdown</string>
+			<string>meta.other.valid-ampersand.markdown.github</string>
 		</dict>
 		<key>block_quote</key>
 		<dict>
@@ -306,7 +306,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.blockquote.github.markdown</string>
+					<string>punctuation.definition.blockquote.markdown.github</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -322,7 +322,7 @@
 				|	[ ]{,3}&gt;.
 				)</string>
 			<key>name</key>
-			<string>markup.quote.github.markdown</string>
+			<string>markup.quote.markdown.github</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -393,7 +393,7 @@
 			<key>match</key>
 			<string>\G([ ]{4}|\t).*$\n?</string>
 			<key>name</key>
-			<string>markup.raw.block.github.markdown</string>
+			<string>markup.raw.block.markdown.github</string>
 		</dict>
 		<key>strike</key>
 		<dict>
@@ -444,13 +444,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.strikethrough.github.markdown</string>
+					<string>punctuation.definition.strikethrough.markdown.github</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>(?&lt;=\S)(\1)(?=\s)</string>
 			<key>name</key>
-			<string>markup.strikethrough.github.markdown</string>
+			<string>markup.strikethrough.markdown.github</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -571,13 +571,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.bold.github.markdown</string>
+					<string>punctuation.definition.bold.markdown.github</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>(?&lt;=\S)(\1)(?=\s)</string>
 			<key>name</key>
-			<string>markup.bold.github.markdown</string>
+			<string>markup.bold.markdown.github</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -659,14 +659,14 @@
 			<key>match</key>
 			<string>&lt;(?![a-z/?\$!])</string>
 			<key>name</key>
-			<string>meta.other.valid-bracket.github.markdown</string>
+			<string>meta.other.valid-bracket.markdown.github</string>
 		</dict>
 		<key>escape</key>
 		<dict>
 			<key>match</key>
 			<string>\\[-`*_#+.!(){}\[\]\\&gt;]</string>
 			<key>name</key>
-			<string>constant.character.escape.github.markdown</string>
+			<string>constant.character.escape.markdown.github</string>
 		</dict>
 		<key>heading</key>
 		<dict>
@@ -677,15 +677,15 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.heading.github.markdown</string>
+					<string>punctuation.definition.heading.markdown.github</string>
 				</dict>
 			</dict>
 			<key>contentName</key>
-			<string>entity.name.section.github.markdown</string>
+			<string>entity.name.section.markdown.github</string>
 			<key>end</key>
 			<string>\s*(#*)$\n?</string>
 			<key>name</key>
-			<string>markup.heading.github.markdown</string>
+			<string>markup.heading.markdown.github</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -701,77 +701,77 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 				<key>10</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.description.title.github.markdown</string>
+					<string>string.other.link.description.title.markdown.github</string>
 				</dict>
 				<key>11</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.github.markdown</string>
+					<string>punctuation.definition.string.markdown.github</string>
 				</dict>
 				<key>12</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.github.markdown</string>
+					<string>punctuation.definition.string.markdown.github</string>
 				</dict>
 				<key>13</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.description.title.github.markdown</string>
+					<string>string.other.link.description.title.markdown.github</string>
 				</dict>
 				<key>14</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.github.markdown</string>
+					<string>punctuation.definition.string.markdown.github</string>
 				</dict>
 				<key>15</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.github.markdown</string>
+					<string>punctuation.definition.string.markdown.github</string>
 				</dict>
 				<key>16</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.metadata.github.markdown</string>
+					<string>punctuation.definition.metadata.markdown.github</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.description.github.markdown</string>
+					<string>string.other.link.description.markdown.github</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.github.markdown</string>
+					<string>punctuation.definition.string.end.markdown.github</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>invalid.illegal.whitespace.github.markdown</string>
+					<string>invalid.illegal.whitespace.markdown.github</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.metadata.github.markdown</string>
+					<string>punctuation.definition.metadata.markdown.github</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 				<key>8</key>
 				<dict>
 					<key>name</key>
-					<string>markup.underline.link.image.github.markdown</string>
+					<string>markup.underline.link.image.markdown.github</string>
 				</dict>
 				<key>9</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -791,7 +791,7 @@
 				(\))
 			 )</string>
 			<key>name</key>
-			<string>meta.image.inline.github.markdown</string>
+			<string>meta.image.inline.markdown.github</string>
 		</dict>
 		<key>image-ref</key>
 		<dict>
@@ -800,38 +800,38 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.description.github.markdown</string>
+					<string>string.other.link.description.markdown.github</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.github.markdown</string>
+					<string>punctuation.definition.constant.markdown.github</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>constant.other.reference.link.github.markdown</string>
+					<string>constant.other.reference.link.markdown.github</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.github.markdown</string>
+					<string>punctuation.definition.constant.markdown.github</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>\!(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])[ ]?(\[)(.*?)(\])</string>
 			<key>name</key>
-			<string>meta.image.reference.github.markdown</string>
+			<string>meta.image.reference.markdown.github</string>
 		</dict>
 		<key>inline</key>
 		<dict>
@@ -949,13 +949,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.italic.github.markdown</string>
+					<string>punctuation.definition.italic.markdown.github</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>(?&lt;=\S)(\1)((?!\1)|(?=\1\1))(?=\s)</string>
 			<key>name</key>
-			<string>markup.italic.github.markdown</string>
+			<string>markup.italic.markdown.github</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1041,23 +1041,23 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>markup.underline.link.github.markdown</string>
+					<string>markup.underline.link.markdown.github</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(&lt;)((?:mailto:)?[-.\w]+@[-a-z0-9]+(\.[-a-z0-9]+)*\.[a-z]+)(&gt;)</string>
 			<key>name</key>
-			<string>meta.link.email.lt-gt.github.markdown</string>
+			<string>meta.link.email.lt-gt.markdown.github</string>
 		</dict>
 		<key>link-inet</key>
 		<dict>
@@ -1066,23 +1066,23 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>markup.underline.link.github.markdown</string>
+					<string>markup.underline.link.markdown.github</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(&lt;)((?:https?|ftp)://.*?)(&gt;)</string>
 			<key>name</key>
-			<string>meta.link.inet.github.markdown</string>
+			<string>meta.link.inet.markdown.github</string>
 		</dict>
 		<key>link-inline</key>
 		<dict>
@@ -1091,77 +1091,77 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 				<key>10</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.description.title.github.markdown</string>
+					<string>string.other.link.description.title.markdown.github</string>
 				</dict>
 				<key>11</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 				<key>12</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.github.markdown</string>
+					<string>punctuation.definition.string.end.markdown.github</string>
 				</dict>
 				<key>13</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.description.title.github.markdown</string>
+					<string>string.other.link.description.title.markdown.github</string>
 				</dict>
 				<key>14</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 				<key>15</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.github.markdown</string>
+					<string>punctuation.definition.string.end.markdown.github</string>
 				</dict>
 				<key>16</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.metadata.github.markdown</string>
+					<string>punctuation.definition.metadata.markdown.github</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.title.github.markdown</string>
+					<string>string.other.link.title.markdown.github</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.github.markdown</string>
+					<string>punctuation.definition.string.end.markdown.github</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>invalid.illegal.whitespace.github.markdown</string>
+					<string>invalid.illegal.whitespace.markdown.github</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.metadata.github.markdown</string>
+					<string>punctuation.definition.metadata.markdown.github</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 				<key>8</key>
 				<dict>
 					<key>name</key>
-					<string>markup.underline.link.github.markdown</string>
+					<string>markup.underline.link.markdown.github</string>
 				</dict>
 				<key>9</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.link.github.markdown</string>
+					<string>punctuation.definition.link.markdown.github</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -1180,7 +1180,7 @@
 				(\))
 			 )</string>
 			<key>name</key>
-			<string>meta.link.inline.github.markdown</string>
+			<string>meta.link.inline.markdown.github</string>
 		</dict>
 		<key>link-ref</key>
 		<dict>
@@ -1189,38 +1189,38 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.title.github.markdown</string>
+					<string>string.other.link.title.markdown.github</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.github.markdown</string>
+					<string>punctuation.definition.string.end.markdown.github</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.begin.github.markdown</string>
+					<string>punctuation.definition.constant.begin.markdown.github</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>constant.other.reference.link.github.markdown</string>
+					<string>constant.other.reference.link.markdown.github</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.end.github.markdown</string>
+					<string>punctuation.definition.constant.end.markdown.github</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])[ ]?(\[)([^\]]*+)(\])</string>
 			<key>name</key>
-			<string>meta.link.reference.github.markdown</string>
+			<string>meta.link.reference.markdown.github</string>
 		</dict>
 		<key>link-ref-literal</key>
 		<dict>
@@ -1229,33 +1229,33 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.github.markdown</string>
+					<string>punctuation.definition.string.begin.markdown.github</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.title.github.markdown</string>
+					<string>string.other.link.title.markdown.github</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.github.markdown</string>
+					<string>punctuation.definition.string.end.markdown.github</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.begin.github.markdown</string>
+					<string>punctuation.definition.constant.begin.markdown.github</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.constant.end.github.markdown</string>
+					<string>punctuation.definition.constant.end.markdown.github</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])[ ]?(\[)(\])</string>
 			<key>name</key>
-			<string>meta.link.reference.literal.github.markdown</string>
+			<string>meta.link.reference.literal.markdown.github</string>
 		</dict>
 		<key>list-paragraph</key>
 		<dict>
@@ -1267,7 +1267,7 @@
 					<key>end</key>
 					<string>^\s*$</string>
 					<key>name</key>
-					<string>meta.paragraph.list.github.markdown</string>
+					<string>meta.paragraph.list.markdown.github</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1285,29 +1285,29 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.raw.github.markdown</string>
+					<string>punctuation.definition.raw.markdown.github</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.raw.github.markdown</string>
+					<string>punctuation.definition.raw.markdown.github</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(`+)([^`]|(?!(?&lt;!`)\1(?!`))`)*+(\1)</string>
 			<key>name</key>
-			<string>markup.raw.inline.github.markdown</string>
+			<string>markup.raw.inline.markdown.github</string>
 		</dict>
 		<key>separator</key>
 		<dict>
 			<key>match</key>
 			<string>\G[ ]{,3}([-*_])([ ]{,2}\1){2,}[ \t]*$\n?</string>
 			<key>name</key>
-			<string>meta.separator.github.markdown</string>
+			<string>meta.separator.markdown.github</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>text.html.github.markdown</string>
+	<string>text.html.markdown.github</string>
 	<key>uuid</key>
 	<string>0A1D9874-B448-11D9-BD50-000D93B6E43C</string>
 </dict>
