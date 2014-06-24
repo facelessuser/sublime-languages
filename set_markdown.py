@@ -12,8 +12,8 @@ extensions = [
 class MardownSwitcherCommand(sublime_plugin.WindowCommand):
     markdowns = [
         "Markdown",
-        "MultiMarkdown"
-        # "GithubFlavoredMarkdown"
+        "MultiMarkdown",
+        "GithubFlavoredMarkdown"
     ]
 
     def run(self):
