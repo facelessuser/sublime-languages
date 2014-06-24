@@ -1,11 +1,3 @@
 {
-    "word_wrap": true,
-
-    "extensions":
-    [
-        "mdown",
-        "markdown",
-        "markdn",
-        "md"
-    ]
+    "word_wrap": true
 }
