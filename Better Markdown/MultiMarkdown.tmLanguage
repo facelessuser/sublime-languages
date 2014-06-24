@@ -219,6 +219,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#fenced-erlang</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>text.plain</string>
 				</dict>
 			</array>
@@ -724,6 +728,30 @@
 				<dict>
 					<key>include</key>
 					<string>source.dosbatch</string>
+				</dict>
+			</array>
+		</dict>
+		<key>fenced-erlang</key>
+		<dict>
+			<key>begin</key>
+			<string>(?&lt;=```)[ \t]*(?i)(erlang)[ \t]*$</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.language.multimarkdown</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?=```)</string>
+			<key>name</key>
+			<string>markup.fenced.embedded-erlang.multimarkdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.erlang</string>
 				</dict>
 			</array>
 		</dict>
