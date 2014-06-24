@@ -398,7 +398,7 @@
 		<key>emoji</key>
 		<dict>
 			<key>match</key>
-			<string>:[a-z0-9]+:</string>
+			<string>:[a-z0-9\+\-_]+:</string>
 			<key>name</key>
 			<string>markup.emoji.markdown.github</string>
 		</dict>
