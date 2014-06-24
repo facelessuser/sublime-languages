@@ -52,7 +52,13 @@ Example:
 - (-moz|-o|-ms|-webkit) items and properties
 
 ### Markdown (Still more to do)
-- Add fenced blocks
+- Add fenced blocks to MultiMarkdown
+- MultiMarkdown is the default
+- Added Github Flavored Markdown
+    - supports fenced blocks
+    - added strikedown scoping `markup.strikethrough`
+    - adjusted logic for when bold/italic are highlighted
+    - TODO: Add emoji scoping
 - Import source highlighting for embedded:
     - python
     - javascript
@@ -74,8 +80,11 @@ Example:
     - c#
     - markdown (experimental)
     - batchfile
+    - erlang
     - (more to come)
 - Enable wrapping by default
+- Added switcher to choose the default markdown style to use
+- TODO: Because embedded fences can some times act funny due to import language scoping, possibly allow the option of choosing variants that don't import external language files for highlighting for times you want to turn it off.
 
 ## Colorizing New Scopes
 
@@ -167,6 +176,47 @@ I like lists to be highlighted differently.  This can be done on the default mar
             <dict>
                 <key>foreground</key>
                 <string>#99CCCC</string>
+            </dict>
+        </dict>
+```
+
+### Highlight Bold, Italic, and Strikethrough (Github Flavored Only)
+```xml
+        <dict>
+            <key>name</key>
+            <string>Markup: Strikethrough</string>
+            <key>scope</key>
+            <string>markup.strikethrough</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#CC99CC</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markdown: Bold</string>
+            <key>scope</key>
+            <string>markup.bold</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold</string>
+                <key>foreground</key>
+                <string>#CC99CC</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markup: Italic</string>
+            <key>scope</key>
+            <string>markup.italic</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
+                <key>foreground</key>
+                <string>#CC99CC</string>
             </dict>
         </dict>
 ```

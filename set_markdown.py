@@ -9,7 +9,7 @@ extensions = [
 ]
 
 
-class MardownSwitcherCommand(sublime_plugin.WindowCommand):
+class MarkdownSwitcherCommand(sublime_plugin.WindowCommand):
     markdowns = [
         "Markdown",
         "MultiMarkdown",
