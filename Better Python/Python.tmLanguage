@@ -1439,7 +1439,7 @@
                 <dict>
                     <!-- Non function style print -->
                     <key>match</key>
-                    <string>(?&lt;!\.)\b(print)\b</string>
+                    <string>(?&lt;!\.)\b(print|del)\b</string>
                     <key>name</key>
                     <string>support.function.builtin.python</string>
                 </dict>
