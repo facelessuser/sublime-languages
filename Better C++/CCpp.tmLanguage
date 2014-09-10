@@ -459,32 +459,72 @@
 	Pointer - CCpp
 ----------------------------------------------------->
 		<dict>
+		<key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.operator.pointer.ccp</string>
+                </dict>
+            </dict>
 			<key>match</key>
-			<string>\w+\:\:\w+\*</string>
+			<string>\w+\:\:\w+(\*)</string>
 			<key>name</key>
 			<string>pointer.ccpp</string>
 		</dict>
 		<dict>
+		<key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.operator.pointer.ccp</string>
+                </dict>
+            </dict>
 			<key>match</key>
-			<string>\*\(\w+\)</string>
+			<string>(\*)\(\w+\)</string>
 			<key>name</key>
 			<string>pointer.ccpp</string>
 		</dict>
 		<dict>
+		<key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.operator.pointer.ccp</string>
+                </dict>
+            </dict>
 			<key>match</key>
-			<string>\(\w+\)\*</string>
+			<string>\(\w+\)(\*)</string>
 			<key>name</key>
 			<string>pointer.ccpp</string>
 		</dict>
 		<dict>
+		<key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.operator.pointer.ccp</string>
+                </dict>
+            </dict>
 			<key>match</key>
-			<string>\w+\*</string>
+			<string>\w+(\*)</string>
 			<key>name</key>
 			<string>pointer.ccpp</string>
 		</dict>
 		<dict>
+		<key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.operator.pointer.ccp</string>
+                </dict>
+            </dict>
 			<key>match</key>
-			<string>\*\w+</string>
+			<string>(\*)\w+</string>
 			<key>name</key>
 			<string>pointer.ccpp</string>
 		</dict>
@@ -492,8 +532,16 @@
 	Address - CCpp
 ----------------------------------------------------->
 		<dict>
+			<key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.operator.address.ccp</string>
+                </dict>
+            </dict>
 			<key>match</key>
-			<string>\&\w+</string>
+			<string>(\&)\w+</string>
 			<key>name</key>
 			<string>address.ccpp</string>
 		</dict>
@@ -517,7 +565,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\w+(?=\()</string>
+			<string>\w+\s*(?=\()</string>
 			<key>name</key>
 			<string>meta.function.c entity.name.function.c</string>
 		</dict>
@@ -559,7 +607,7 @@
 ---------------------------------------->
 		<dict>
 			<key>match</key>
-			<string>\!(?=\w)</string>
+			<string>\!\s*(?=\w)</string>
 			<key>name</key>
 			<string>keyword.operator.logical.ccpp</string>
 		</dict>
