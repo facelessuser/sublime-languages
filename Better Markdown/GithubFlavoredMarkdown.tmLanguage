@@ -575,6 +575,14 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#autolink</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#autolink-email</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#image-ref</string>
 				</dict>
 				<dict>
@@ -703,6 +711,14 @@
 				<dict>
 					<key>include</key>
 					<string>#link-email</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#autolink</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#autolink-email</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -960,6 +976,14 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#autolink</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#autolink-email</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#image-ref</string>
 				</dict>
 				<dict>
@@ -1092,6 +1116,14 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#autolink</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#autolink-email</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#image-ref</string>
 				</dict>
 				<dict>
@@ -1160,6 +1192,29 @@
 			<string>(&lt;)((?:https?|ftp)://.*?)(&gt;)</string>
 			<key>name</key>
 			<string>meta.link.inet.markdown.github</string>
+		</dict>
+		<key>autolink</key>
+		<dict>
+			<key>match</key>
+			<string>(?x)(?i)
+			(
+				(
+					(ht|f)tp(s?)://(([a-zA-Z0-9\-._]+(\.[a-zA-Z0-9\-._]+)+)|localhost)|
+					(w{3})(\.[a-zA-Z0-9\-._]+(\.[a-zA-Z0-9\-._]+)+)
+				)
+				(/?)([a-zA-Z0-9\-.?,'/+&amp;%$\#_]*)([\d\w./%+-=&amp;?:"',|~;]*)
+				[A-Za-z\d\-_~:/?\#@!$*+=]
+			)
+			</string>
+			<key>name</key>
+			<string>markup.underline.link.markdown.github</string>
+		</dict>
+		<key>autolink-email</key>
+		<dict>
+			<key>match</key>
+			<string>(?i)((?:[\-+\w]([\w\-+]|\.(?!\.))+)@(?:[\w\-]+\.)(([\w\-]|(?&lt;!\.)\.(?!\.))*)[a-z](?![\d.\-+_]))</string>
+			<key>name</key>
+			<string>markup.underline.link.email.markdown.github</string>
 		</dict>
 		<key>link-inline</key>
 		<dict>
