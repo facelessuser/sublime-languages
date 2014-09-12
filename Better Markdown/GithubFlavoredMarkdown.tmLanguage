@@ -599,7 +599,7 @@
 		<dict>
 			<key>begin</key>
 			<string>(?x)
-						(?&lt;=\s|^)(\*\*|__)(?=\S)								# Open
+						(?&lt;=[^a-zA-z\d]|^)(\*\*|__)(?=\S)								# Open
 						(?=
 							(
 							    &lt;[^&gt;]*+&gt;							# HTML tags
@@ -648,7 +648,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?&lt;=\S)(\1)(?=\s)</string>
+			<string>(?&lt;=\S)(\1)(?![a-zA-z\d])</string>
 			<key>name</key>
 			<string>markup.bold.markdown.github</string>
 			<key>patterns</key>
@@ -1000,7 +1000,7 @@
 		<dict>
 			<key>begin</key>
 			<string>(?x)
-						(?&lt;=\s|^)(\*|_)(?=\S)								# Open
+						(?&lt;=[^a-zA-z\d]|^)(\*|_)(?=\S)								# Open
 						(?=
 							(
 							    &lt;[^&gt;]*+&gt;							# HTML tags
@@ -1050,7 +1050,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?&lt;=\S)(\1)((?!\1)|(?=\1\1))(?=\s)</string>
+			<string>(?&lt;=\S)(\1)((?!\1)|(?=\1\1))(?![a-zA-z\d])</string>
 			<key>name</key>
 			<string>markup.italic.markdown.github</string>
 			<key>patterns</key>
