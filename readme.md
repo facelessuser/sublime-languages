@@ -59,32 +59,34 @@ Example:
     - added strikedown scoping `markup.strikethrough`
     - adjusted logic for when bold/italic are highlighted
     - emoji scoping for things like `:smile:`.  `markup.emoji`
-- Import source highlighting for embedded:
-    - python
-    - javascript
-    - json
-    - xml
-    - html
-    - php
-    - css
-    - diff
-    - perl
-    - bash
-    - java
-    - ini
-    - apacheconf
-    - clojure
-    - ruby
-    - applescript
-    - c++/c
-    - c#
-    - markdown (experimental)
-    - batchfile
-    - erlang
-    - (more to come)
+- Fenced blocks support backticks and tilde supported
 - Enable wrapping by default
 - Added switcher to choose the default markdown style to use
-- TODO: Because embedded fences can some times act funny due to import language scoping, possibly allow the option of choosing variants that don't import external language files for highlighting for times you want to turn it off.
+- ~~Import source highlighting for embedded:~~
+    - ~~python~~
+    - ~~javascript~~
+    - ~~json~~
+    - ~~xml~~
+    - ~~html~~
+    - ~~php~~
+    - ~~css~~
+    - ~~diff~~
+    - ~~perl~~
+    - ~~bash~~
+    - ~~java~~
+    - ~~ini~~
+    - ~~apacheconf~~
+    - ~~clojure~~
+    - ~~ruby~~
+    - ~~applescript~~
+    - ~~c++/c~~
+    - ~~c#~~
+    - ~~markdown (experimental)~~
+    - ~~batchfile~~
+    - ~~erlang~~
+    - ~~(more to come)~~
+
+NOTE: Because embedded fences can some times act funny due to import language scoping being too greedy, embedded syntax highlighting has been removed for the time being and possibly forever.
 
 ## Colorizing New Scopes
 
