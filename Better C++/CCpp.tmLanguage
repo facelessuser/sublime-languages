@@ -161,7 +161,7 @@
 ---------------------------------------->
 		<dict>
 			<key>begin</key>
-			<string>(\:)\s*(\w+\(\w+\))+</string>
+			<string>(\:)\s*(\w+\(\w+\))+(?:\s*(?:/\*|//|\{))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -594,13 +594,22 @@
 			<string>meta.function.c entity.name.function.c</string>
 		</dict>
 <!--------------------------------------
-	Logical Operator - CCpp
+	Compound Operator - CCpp
 ---------------------------------------->
 		<dict>
 			<key>match</key>
 			<string>\+\=|\-\=|\*\=|\/\=|\%\=|\&\=|\|\=|\^\=|\&lt;\&lt;\=|\&gt;\&gt;\=</string>
 			<key>name</key>
 			<string>keyword.operator.compound.ccpp</string>
+		</dict>
+<!--------------------------------------
+	Conditional Operator - CCpp
+---------------------------------------->
+		<dict>
+			<key>match</key>
+			<string>\?|\:</string>
+			<key>name</key>
+			<string>keyword.operator.conditional.ccpp</string>
 		</dict>
 <!--------------------------------------
 	Logical Operator - CCpp
@@ -665,147 +674,147 @@
 <!------------------------------------------
 	Curly Brackets (exceptions)- CCpp
 -------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>(?&lt;=\s)\}(?=break|case|continue|default|do|else|for|goto|if|_Pragma|return|switch|while)</string>
-					<key>name</key>
-					<string>open.curly.bracket.block.ccpp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\}(?=[^\;\s\r\n])</string>
-					<key>name</key>
-					<string>close.curly.bracket.ccpp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(?&lt;=[^\s\r\n])\s*\}</string>
-					<key>name</key>
-					<string>close.curly.bracket.ccpp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\{(?=(\s*|\t*)\/\/\s*.*(\r|\n))</string>
-					<key>name</key>
-					<string>open.curly.bracket.block.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\s)\}(?=break|case|continue|default|do|else|for|goto|if|_Pragma|return|switch|while)</string>
+			<key>name</key>
+			<string>open.curly.bracket.block.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\}(?=[^\;\s\r\n])</string>
+			<key>name</key>
+			<string>close.curly.bracket.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=[^\s\r\n])\s*\}</string>
+			<key>name</key>
+			<string>close.curly.bracket.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\{(?=(\s*|\t*)\/\/\s*.*(\r|\n))</string>
+			<key>name</key>
+			<string>open.curly.bracket.block.ccpp</string>
+		</dict>
 <!------------------------------------------
 	Curly Brackets Block - CCpp
 -------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>\{(?=(\s*|\t*)(\r|\n))</string>
-					<key>name</key>
-					<string>open.curly.bracket.block.ccpp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(?&lt;=\s)\}(?=\;?)</string>
-					<key>name</key>
-					<string>close.curly.bracket.block.ccpp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>^\}</string>
-					<key>name</key>
-					<string>close.curly.bracket.block.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>\{(?=(\s*|\t*)(\r|\n))</string>
+			<key>name</key>
+			<string>open.curly.bracket.block.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\s)\}(?=\;?)</string>
+			<key>name</key>
+			<string>close.curly.bracket.block.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\}</string>
+			<key>name</key>
+			<string>close.curly.bracket.block.ccpp</string>
+		</dict>
 <!------------------------------------------
 	Curly Brackets - CCpp
 -------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>\{</string>
-					<key>name</key>
-					<string>open.curly.bracket.ccpp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\}</string>
-					<key>name</key>
-					<string>close.curly.bracket.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>\{</string>
+			<key>name</key>
+			<string>open.curly.bracket.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\}</string>
+			<key>name</key>
+			<string>close.curly.bracket.ccpp</string>
+		</dict>
 <!------------------------------------------
 	Round Brackets - CCpp
 -------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>\(</string>
-					<key>name</key>
-					<string>open.round.bracket.ccpp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\)</string>
-					<key>name</key>
-					<string>close.round.bracket.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>\(</string>
+			<key>name</key>
+			<string>open.round.bracket.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>close.round.bracket.ccpp</string>
+		</dict>
 <!------------------------------------------
 	Angle Brackets - CCpp
 -------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>\[</string>
-					<key>name</key>
-					<string>open.angle.bracket.ccpp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\]</string>
-					<key>name</key>
-					<string>close.angle.bracket.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>\[</string>
+			<key>name</key>
+			<string>open.angle.bracket.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\]</string>
+			<key>name</key>
+			<string>close.angle.bracket.ccpp</string>
+		</dict>
 <!---------------------------------------------------
 	Period - CCpp
 ----------------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>\.</string>
-					<key>name</key>
-					<string>period.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>\.</string>
+			<key>name</key>
+			<string>period.ccpp</string>
+		</dict>
 <!---------------------------------------------------
 	Coma - CCpp
 ----------------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>\,</string>
-					<key>name</key>
-					<string>coma.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>\,</string>
+			<key>name</key>
+			<string>coma.ccpp</string>
+		</dict>
 <!---------------------------------------------------
 	Semicolon End of Line (exceptions)- CCpp
 ----------------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>\;(?=(\s*|\t*)\/\/\s*.*)</string>
-					<key>name</key>
-					<string>semi_colon.eol.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>\;(?=(\s*|\t*)\/\/\s*.*)</string>
+			<key>name</key>
+			<string>semi_colon.eol.ccpp</string>
+		</dict>
 <!---------------------------------------------------
 	Semicolon End of Line - CCpp
 ----------------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>\;(?=(\s*)(\r|\n))</string>
-					<key>name</key>
-					<string>semi_colon.eol.ccpp</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\s*?\;\s*?$</string>
-					<key>name</key>
-					<string>semi_colon.eol.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>\;(?=(\s*)(\r|\n))</string>
+			<key>name</key>
+			<string>semi_colon.eol.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\s*?\;\s*?$</string>
+			<key>name</key>
+			<string>semi_colon.eol.ccpp</string>
+		</dict>
 <!---------------------------------------------------
 	Semicolon Block - CCpp
 ----------------------------------------------------->
-				<dict>
-					<key>match</key>
-					<string>\;</string>
-					<key>name</key>
-					<string>semi_colon.ccpp</string>
-				</dict>
+		<dict>
+			<key>match</key>
+			<string>\;</string>
+			<key>name</key>
+			<string>semi_colon.ccpp</string>
+		</dict>
 <!--------------------------------------
 	String Quoted Double - C
 ---------------------------------------->
@@ -885,12 +894,12 @@
 			<key>begin</key>
 			<string>(?x)
         		^\s*\#\s*(define)\s+             # define
-        		((?&lt;id&gt;[a-zA-Z_][a-zA-Z0-9_]*))  # macro name
+        		((?:[a-zA-Z_][a-zA-Z0-9_]*))  # macro name
         		(?:                              # and optionally:
         		    (\()                         # an open parenthesis
         		        (
-        		            \s* \g&lt;id&gt; \s*       # first argument
-        		            ((,) \s* \g&lt;id&gt; \s*)*  # additional arguments
+        		            \s* [a-zA-Z_][a-zA-Z0-9_]* \s*       # first argument
+        		            (?:(,) \s* [a-zA-Z_][a-zA-Z0-9_]* \s*)*  # additional arguments
         		            (?:\.\.\.)?          # varargs ellipsis?
         		        )
         		    (\))                         # a close parenthesis
@@ -908,17 +917,17 @@
 					<key>name</key>
 					<string>entity.name.function.preprocessor.c</string>
 				</dict>
-				<key>4</key>
+				<key>5</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.parameters.c</string>
 				</dict>
-				<key>5</key>
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>variable.parameter.preprocessor.c</string>
 				</dict>
-				<key>7</key>
+				<key>6</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.separator.parameters.c</string>
@@ -944,6 +953,12 @@
 				<dict>
 					<key>include</key>
 					<string>$base</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(\w+)</string>
+					<key>name</key>
+					<string></string>
 				</dict>
 			</array>
 		</dict>
