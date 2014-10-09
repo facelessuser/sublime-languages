@@ -1212,7 +1212,7 @@
 		<key>autolink-email</key>
 		<dict>
 			<key>match</key>
-			<string>(?i)((?:[\-+\w]([\w\-+]|\.(?!\.))+)@(?:[\w\-]+\.)(([\w\-]|(?&lt;!\.)\.(?!\.))*)[a-z](?![\d.\-+_]))</string>
+			<string>(?i)((?:[\-+\w]([\w\-+]|\.(?!\.))+)@(?:[\w\-]+\.)(([\w\-]|(?&lt;!\.)\.(?!\.))*)[a-z](?![\d\-_@]))</string>
 			<key>name</key>
 			<string>markup.underline.link.email.markdown.github</string>
 		</dict>
