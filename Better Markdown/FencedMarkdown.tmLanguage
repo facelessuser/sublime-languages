@@ -13,13 +13,18 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>^(((`|\~){3,5})(?!\3))[ \t]*(?:(\{?)[ \t]*(?i)(bash|sh|zshcss|diff|html|css|xhtml|javascript|js|node|json|perl|php|python|py|xml|rss|xsd|wsdl|ApacheConf|apache|applescript|C|C\+\+|cpp|c#|csharp|ruby|rake|rb|rbx|makefile|mak|markdown|clojure|ini|java|batchfile|bat|batch|dosbatch|erlang|trex)[ \t]*(\}?)[ \t]*)?$</string>
+					<string>^(((`|\~){3,5})(?!\3))[ \t]*(?:(\{?)[ \t]*([a-zA-Z0-9_+-]*)[ \t]*)?(?:hl_lines=(("|').*?\7)[ \t]*(\}?)[ \t]*)?$</string>
 					<key>captures</key>
 					<dict>
 						<key>5</key>
 						<dict>
 							<key>name</key>
 							<string>variable.language.markdown.fenced</string>
+						</dict>
+						<key>6</key>
+						<dict>
+							<key>name</key>
+							<string>string.higlight.markdown.fenced</string>
 						</dict>
 					</dict>
 					<key>end</key>
