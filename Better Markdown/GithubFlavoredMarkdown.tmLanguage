@@ -1202,7 +1202,7 @@
 				(w{3}\.)[a-z\d\-_]+(?:\.[a-z\d\-._]+)+
 			)
 			/?[a-z\d\-._(){}\[\]?,!'/+&amp;@%$#=:"|~;]*
-			[a-z\d\-_~:/#@$*+=]
+			[a-z\d\-_~/#@$*+=]
 			</string>
 			<key>name</key>
 			<string>markup.underline.link.markdown.github</string>
