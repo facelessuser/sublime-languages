@@ -34,10 +34,6 @@ Example:
 - Based off of https://github.com/kodLite/cppStartingKit
 - Fix comments that trail some preprocessors like #endif etc.
 
-### Perl
-- Comment out regex that targets ```<<``` and breaks code it using bitwise ```<<``` operand
-- Add support for scoping flags of match regex ```m/regex/egimos```
-
 ### PHP
 - Add scope for targeting function calls that are not system function calls
 
