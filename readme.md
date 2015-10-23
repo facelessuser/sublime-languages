@@ -8,12 +8,8 @@ Example:
 ```javascript
     "ignored_packages":
     [
-        "Python",
         "Batch File",
-        "JavaScript",
-        "Perl",
         "C++",
-        "PHP",
         "Markdown"
     ],
 ```
@@ -24,6 +20,9 @@ Example:
 ### C/C++/C++11
 - Based off of https://github.com/kodLite/cppStartingKit
 - Fix comments that trail some preprocessors like #endif etc.
+
+### JSON
+- Scope keys different than values so keys can be colored differently than values.
 
 ### CSS
 - Fix issue where things like (-moz|-o|-ms|-webkit) items would not highlight.
