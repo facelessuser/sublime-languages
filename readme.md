@@ -18,30 +18,12 @@ Example:
     ],
 ```
 
-### Javascript
-- Fix some function related highlighting bugs
-- Add scope for targeting function calls that are not system function calls
-- Fix some regex highlighting
-
-### JSON
-- Add sublime-commands to file types
-- Give finer granularity with string types in JSON.  Key strings have special scope.
-
 ### Batch File
 - Add Comment support for comment line shortcut
 
 ### C/C++/C++11
 - Based off of https://github.com/kodLite/cppStartingKit
 - Fix comments that trail some preprocessors like #endif etc.
-
-### PHP
-- Add scope for targeting function calls that are not system function calls
-
-### Python
-- Add scope for targeting function calls that are not system function calls
-- Ensure that dot function calls do not scope all parent memebers, but just the function call
-- Python 3 function annotations
-- Features ripped from https://github.com/MattDMo/PythonImproved MattDMo seems to be picking up where I left off; if you don't want to use all of my random languages, MattDMo's package is a good one to pick up.  He has taken my changes and is actively supporting new ones.
 
 ### CSS
 - Fix issue where things like (-moz|-o|-ms|-webkit) items would not highlight.
