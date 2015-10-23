@@ -2,19 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<!-------------------------------------------
-	File Type Support
-------------------------------------------->
+<!-- File Type Support -->
 	<key>fileTypes</key>
 	<array>
-<!-------------------------------------------
-	C File Type Support
-------------------------------------------->
+<!-- C File Type Support -->
 		<string>c</string>
 		<string>h</string>
-<!-------------------------------------------
-	C++ File Type Support
-------------------------------------------->
+<!-- C++ File Type Support -->
 		<string>cpp</string>
 		<string>cc</string>
 		<string>cp</string>
@@ -44,16 +38,12 @@
 	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
 	<key>keyEquivalent</key>
 	<string>^~C</string>
-<!-----------------------------------------
-	Display Syntax As
-------------------------------------------->
+<!-- Display Syntax As -->
 	<key>name</key>
 	<string>C/C++(11)</string>
 	<key>patterns</key>
 	<array>
-<!---------------------------------------------------
-	Includes (from repositories) - CCpp
---------------------------------------------------->
+<!-- Includes (from repositories) - CCpp -->
 		<dict>
 			<key>include</key>
 			<string>#comments</string>
@@ -78,9 +68,7 @@
 			<key>include</key>
 			<string>#disabled</string>
 		</dict>
-<!----------------------------------------
-	Raw String (exception)- CCpp
----------------------------------------->
+<!-- Raw String (exception)- CCpp -->
 		<dict>
 			<key>begin</key>
 			<string>(R|Ru|RU|uR|UR)(\"\+\*\()\.*</string>
@@ -117,9 +105,7 @@
 				</dict>
 			</array>
 		</dict>
-<!----------------------------------------
-	Raw String - CCpp
----------------------------------------->
+<!-- Raw String - CCpp -->
 		<dict>
 			<key>begin</key>
 			<string>(R|Ru|RU|uR|UR)(\"\()\.*</string>
@@ -156,9 +142,7 @@
 				</dict>
 			</array>
 		</dict>
-<!----------------------------------------
-	Member Initializer - CCpp
----------------------------------------->
+<!-- Member Initializer - CCpp -->
 		<dict>
 			<key>begin</key>
 			<string>(\:)\s*(\w+\(\w+\))+(?:\s*(?:/\*|//|\{))</string>
@@ -195,18 +179,14 @@
 				</dict>
 			</array>
 		</dict>
-<!--------------------------------------
-	Keyword Control - C
----------------------------------------->
+<!-- Keyword Control - C -->
 		<dict>
 			<key>match</key>
 			<string>\b(break|case|continue|default|do|else|for|goto|if|_Pragma|return|switch|while)\b</string>
 			<key>name</key>
 			<string>keyword.control.c</string>
 		</dict>
-<!--------------------------------------
-	Keyword Control - C++
----------------------------------------->
+<!-- Keyword Control - C++ -->
 		<dict>
 			<key>match</key>
 			<string>\b(catch|operator|try|throw|using|namespace)\b</string>
@@ -219,72 +199,56 @@
 			<key>name</key>
 			<string>keyword.control.c++</string>
 		</dict>
-<!--------------------------------------
-	Keyword Operator - C++
----------------------------------------->
+<!-- Keyword Operator - C++ -->
 		<dict>
 			<key>match</key>
 			<string>\b(and|and_eq|bitand|bitor|compl|not|not_eq|or|or_eq|typeid|xor|xor_eq)\b</string>
 			<key>name</key>
 			<string>keyword.operator.c++</string>
 		</dict>
-<!--------------------------------------
-	Keyword Operator Cast - C++
----------------------------------------->
+<!-- Keyword Operator Cast - C++ -->
 		<dict>
 			<key>match</key>
 			<string>\b(const_cast|dynamic_cast|reinterpret_cast|static_cast)\b\s*</string>
 			<key>name</key>
 			<string>keyword.operator.cast.c++</string>
 		</dict>
-<!--------------------------------------
-	Storage Type - C
----------------------------------------->
+<!-- Storage Type - C -->
 		<dict>
 			<key>match</key>
 			<string>\b(asm|__asm__|auto|bool|_Bool|char|_Complex|double|enum|float|_Imaginary|string|int|long|short|signed|struct|typedef|union|unsigned|void)\b</string>
 			<key>name</key>
 			<string>storage.type.c</string>
 		</dict>
-<!--------------------------------------
-	Storage Type - C++
----------------------------------------->
+<!-- Storage Type - C++ -->
 		<dict>
 			<key>match</key>
 			<string>\b(class|wchar_t|nullptr_t)\b</string>
 			<key>name</key>
 			<string>storage.type.c++</string>
 		</dict>
-<!-----------------------------------------
-	Storage Type - C++11
-------------------------------------------->
+<!-- Storage Type - C++11 -->
 		<dict>
 			<key>match</key>
 			<string>\b(size_t|int8_t|int16_t|int32_t|int64_t|uint8_t|uint16_t|uint32_t|uint64_t|char16_t|char32_t)\b</string>
 			<key>name</key>
 			<string>storage.type.c++11</string>
 		</dict>
-<!--------------------------------------
-	Storage Type Template - C++
----------------------------------------->
+<!-- Storage Type Template - C++ -->
 		<dict>
 			<key>match</key>
 			<string>\btemplate\b\s*</string>
 			<key>name</key>
 			<string>storage.type.template.c++</string>
 		</dict>
-<!--------------------------------------
-	Storage Modifier - C
----------------------------------------->
+<!-- Storage Modifier - C -->
 		<dict>
 			<key>match</key>
 			<string>\b(const|extern|register|restrict|static|volatile|inline)\b</string>
 			<key>name</key>
 			<string>storage.modifier.c</string>
 		</dict>
-<!--------------------------------------
-	Storage Modifier - C++
----------------------------------------->
+<!-- Storage Modifier - C++ -->
 		<dict>
 			<key>match</key>
 			<string>\b(export|mutable|typename)\b</string>
@@ -309,9 +273,7 @@
 			<key>name</key>
 			<string>storage.modifier.c++</string>
 		</dict>
-<!-----------------------------------------
-	Storage Modifier - C++11
-------------------------------------------->
+<!-- Storage Modifier - C++11 -->
 		<dict>
 			<key>match</key>
 			<string>\b(constexpr|auto)\b</string>
@@ -324,9 +286,7 @@
 			<key>name</key>
 			<string>storage.modifier.c++</string>
 		</dict>
-<!-----------------------------------------------
-	Constant Other Variable Mac Classic C - C
------------------------------------------------->
+<!-- Constant Other Variable Mac Classic C - C -->
 		<dict>
 			<key>comment</key>
 			<string>common C constant naming idiom -- kConstantVariable</string>
@@ -335,27 +295,21 @@
 			<key>name</key>
 			<string>constant.other.variable.mac-classic.c</string>
 		</dict>
-<!------------------------------------------------------
-	Variable Other Readwrite Global Mac Classic C - C
-------------------------------------------------------->
+<!-- Variable Other Readwrite Global Mac Classic C - C -->
 		<dict>
 			<key>match</key>
 			<string>\bg[A-Z]\w*\b</string>
 			<key>name</key>
 			<string>variable.other.readwrite.global.mac-classic.c</string>
 		</dict>
-<!---------------------------------------------------------
-	Variable Other Readwrite Static Mac Classic C - C
---------------------------------------------------------->
+<!-- Variable Other Readwrite Static Mac Classic C - C -->
 		<dict>
 			<key>match</key>
 			<string>\bs[A-Z]\w*\b</string>
 			<key>name</key>
 			<string>variable.other.readwrite.static.mac-classic.c</string>
 		</dict>
-<!-------------------------------------------
-	Variable Other Readwrite Member - C++
---------------------------------------------->
+<!-- Variable Other Readwrite Member - C++ -->
 		<dict>
 			<key>comment</key>
 			<string>common C++ instance var naming idiom -- fMemberName</string>
@@ -364,90 +318,70 @@
 			<key>name</key>
 			<string>variable.other.readwrite.member.c++</string>
 		</dict>
-<!----------------------------
-	Variable Language - C++
------------------------------>
+<!-- Variable Language - C++ -->
 		<dict>
 			<key>match</key>
 			<string>\bthis\b</string>
 			<key>name</key>
 			<string>variable.language.c++</string>
 		</dict>
-<!--------------------------------------
-	Constant Language - C
----------------------------------------->
+<!-- Constant Language - C -->
 		<dict>
 			<key>match</key>
 			<string>\b(NULL|true|false|TRUE|FALSE)\b</string>
 			<key>name</key>
 			<string>constant.language.c</string>
 		</dict>
-<!-----------------------------
-	Constant Language - C++
--------------------------------->
+<!-- Constant Language - C++ -->
 		<dict>
 			<key>match</key>
 			<string>\bnullptr\b</string>
 			<key>name</key>
 			<string>constant.language.c++</string>
 		</dict>
-<!--------------------------------------
-	Constant Numeric - C
----------------------------------------->
+<!-- Constant Numeric - C -->
 		<dict>
 			<key>match</key>
 			<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\b</string>
 			<key>name</key>
 			<string>constant.numeric.c</string>
 		</dict>
-<!--------------------------------------
-	Support Type System Types - C
----------------------------------------->
+<!-- Support Type System Types - C -->
 		<dict>
 			<key>match</key>
 			<string>\b(u_char|u_short|u_int|u_long|ushort|uint|u_quad_t|quad_t|qaddr_t|caddr_t|daddr_t|dev_t|fixpt_t|blkcnt_t|blksize_t|gid_t|in_addr_t|in_port_t|ino_t|key_t|mode_t|nlink_t|id_t|pid_t|off_t|segsz_t|swblk_t|uid_t|id_t|clock_t|size_t|ssize_t|time_t|useconds_t|suseconds_t)\b</string>
 			<key>name</key>
 			<string>support.type.sys-types.c</string>
 		</dict>
-<!--------------------------------------
-	Support Type POSIX thread- C
----------------------------------------->
+<!-- Support Type POSIX thread- C -->
 		<dict>
 			<key>match</key>
 			<string>\b(pthread_attr_t|pthread_cond_t|pthread_condattr_t|pthread_mutex_t|pthread_mutexattr_t|pthread_once_t|pthread_rwlock_t|pthread_rwlockattr_t|pthread_t|pthread_key_t)\b</string>
 			<key>name</key>
 			<string>support.type.pthread.c</string>
 		</dict>
-<!--------------------------------------
-	Standard Input Support - C
----------------------------------------->
+<!-- Standard Input Support - C -->
 		<dict>
 			<key>match</key>
 			<string>\b(int8_t|int16_t|int32_t|int64_t|uint8_t|uint16_t|uint32_t|uint64_t|int_least8_t|int_least16_t|int_least32_t|int_least64_t|uint_least8_t|uint_least16_t|uint_least32_t|uint_least64_t|int_fast8_t|int_fast16_t|int_fast32_t|int_fast64_t|uint_fast8_t|uint_fast16_t|uint_fast32_t|uint_fast64_t|intptr_t|uintptr_t|intmax_t|intmax_t|uintmax_t|uintmax_t)\b</string>
 			<key>name</key>
 			<string>support.type.stdint.c</string>
 		</dict>
-<!--------------------------------------
-	Constant Mac Classic C - C
----------------------------------------->
+<!-- Constant Mac Classic C - C -->
 		<dict>
 			<key>match</key>
 			<string>\b(noErr|kNilOptions|kInvalidID|kVariableLengthArray)\b</string>
 			<key>name</key>
 			<string>support.constant.mac-classic.c</string>
 		</dict>
-<!--------------------------------------
-	Mac Classic C System Support - C
----------------------------------------->
+<!-- Mac Classic C System Support - C -->
 		<dict>
 			<key>match</key>
 			<string>\b(AbsoluteTime|Boolean|Byte|ByteCount|ByteOffset|BytePtr|CompTimeValue|ConstLogicalAddress|ConstStrFileNameParam|ConstStringPtr|Duration|Fixed|FixedPtr|Float32|Float32Point|Float64|Float80|Float96|FourCharCode|Fract|FractPtr|Handle|ItemCount|LogicalAddress|OptionBits|OSErr|OSStatus|OSType|OSTypePtr|PhysicalAddress|ProcessSerialNumber|ProcessSerialNumberPtr|ProcHandle|Ptr|ResType|ResTypePtr|ShortFixed|ShortFixedPtr|SignedByte|SInt16|SInt32|SInt64|SInt8|Size|StrFileName|StringHandle|StringPtr|TimeBase|TimeRecord|TimeScale|TimeValue|TimeValue64|UInt16|UInt32|UInt64|UInt8|UniChar|UniCharCount|UniCharCountPtr|UniCharPtr|UnicodeScalarValue|UniversalProcHandle|UniversalProcPtr|UnsignedFixed|UnsignedFixedPtr|UnsignedWide|UTF16Char|UTF32Char|UTF8Char)\b</string>
 			<key>name</key>
 			<string>support.type.mac-classic.c</string>
 		</dict>
-<!---------------------------------------------------
-	Deconstructor - CCpp
------------------------------------------------------>
+<!-- Deconstructor - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\~\w+</string>
@@ -455,9 +389,7 @@
 			<string>deconstructor.ccpp</string>
 		</dict>
 
-<!---------------------------------------------------
-	Pointer - CCpp
------------------------------------------------------>
+<!-- Pointer - CCpp -->
 		<dict>
 		<key>captures</key>
             <dict>
@@ -528,9 +460,7 @@
 			<key>name</key>
 			<string>pointer.ccpp</string>
 		</dict>
-<!---------------------------------------------------
-	Address - CCpp
------------------------------------------------------>
+<!-- Address - CCpp -->
 		<dict>
 			<key>captures</key>
             <dict>
@@ -541,22 +471,18 @@
                 </dict>
             </dict>
 			<key>match</key>
-			<string>(\&)\w+</string>
+			<string>(\&amp;)\w+</string>
 			<key>name</key>
 			<string>address.ccpp</string>
 		</dict>
-<!---------------------------------------------------
-	Array - CCpp
------------------------------------------------------>
+<!-- Array - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\w+(?=\[)</string>
 			<key>name</key>
 			<string>array.ccpp</string>
 		</dict>
-<!---------------------------------------------------
-	Function Support - CCpp
------------------------------------------------------>
+<!-- Function Support - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>(?&lt;=class|wchar_t|nullptr_t)\s\w+</string>
@@ -593,27 +519,21 @@
 			<key>name</key>
 			<string>meta.function.c entity.name.function.c</string>
 		</dict>
-<!--------------------------------------
-	Compound Operator - CCpp
----------------------------------------->
+<!-- Compound Operator - CCpp -->
 		<dict>
 			<key>match</key>
-			<string>\+\=|\-\=|\*\=|\/\=|\%\=|\&\=|\|\=|\^\=|\&lt;\&lt;\=|\&gt;\&gt;\=</string>
+			<string>\+\=|\-\=|\*\=|\/\=|\%\=|\&amp;\=|\|\=|\^\=|\&lt;\&lt;\=|\&gt;\&gt;\=</string>
 			<key>name</key>
 			<string>keyword.operator.compound.ccpp</string>
 		</dict>
-<!--------------------------------------
-	Conditional Operator - CCpp
----------------------------------------->
+<!-- Conditional Operator - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\?|\:</string>
 			<key>name</key>
 			<string>keyword.operator.conditional.ccpp</string>
 		</dict>
-<!--------------------------------------
-	Logical Operator - CCpp
----------------------------------------->
+<!-- Logical Operator - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\!\s*(?=\w)</string>
@@ -622,13 +542,11 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\&\&|\|\|</string>
+			<string>\&amp;\&amp;|\|\|</string>
 			<key>name</key>
 			<string>keyword.operator.logical.ccpp</string>
 		</dict>
-<!--------------------------------------
-	Bitwise Operator - CCpp
----------------------------------------->
+<!-- Bitwise Operator - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>~(?=\w)</string>
@@ -637,13 +555,11 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\&|\||\^|\&lt;\&lt;|\&gt;\&gt;</string>
+			<string>\&amp;|\||\^|\&lt;\&lt;|\&gt;\&gt;</string>
 			<key>name</key>
 			<string>keyword.operator.bitwise.ccpp</string>
 		</dict>
-<!--------------------------------------
-	Comparison Operator - CCpp
----------------------------------------->
+<!-- Comparison Operator - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\&gt;\=</string>
@@ -662,18 +578,14 @@
 			<key>name</key>
 			<string>keyword.operator.comparison.ccpp</string>
 		</dict>
-<!----------------------------------------
-	Arithmetic operators - CCpp
------------------------------------------->
+<!-- Arithmetic operators - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\=|\+|\-|\*|\/|\%</string>
 			<key>name</key>
 			<string>keyword.operator.arithmetic.ccpp</string>
 		</dict>
-<!------------------------------------------
-	Curly Brackets (exceptions)- CCpp
--------------------------------------------->
+<!-- Curly Brackets (exceptions)- CCpp -->
 		<dict>
 			<key>match</key>
 			<string>(?&lt;=\s)\}(?=break|case|continue|default|do|else|for|goto|if|_Pragma|return|switch|while)</string>
@@ -698,9 +610,7 @@
 			<key>name</key>
 			<string>open.curly.bracket.block.ccpp</string>
 		</dict>
-<!------------------------------------------
-	Curly Brackets Block - CCpp
--------------------------------------------->
+<!-- Curly Brackets Block - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\{(?=(\s*|\t*)(\r|\n))</string>
@@ -719,9 +629,7 @@
 			<key>name</key>
 			<string>close.curly.bracket.block.ccpp</string>
 		</dict>
-<!------------------------------------------
-	Curly Brackets - CCpp
--------------------------------------------->
+<!-- Curly Brackets - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\{</string>
@@ -734,9 +642,7 @@
 			<key>name</key>
 			<string>close.curly.bracket.ccpp</string>
 		</dict>
-<!------------------------------------------
-	Round Brackets - CCpp
--------------------------------------------->
+<!-- Round Brackets - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\(</string>
@@ -749,9 +655,7 @@
 			<key>name</key>
 			<string>close.round.bracket.ccpp</string>
 		</dict>
-<!------------------------------------------
-	Angle Brackets - CCpp
--------------------------------------------->
+<!-- Angle Brackets - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\[</string>
@@ -764,36 +668,28 @@
 			<key>name</key>
 			<string>close.angle.bracket.ccpp</string>
 		</dict>
-<!---------------------------------------------------
-	Period - CCpp
------------------------------------------------------>
+<!-- Period - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\.</string>
 			<key>name</key>
 			<string>period.ccpp</string>
 		</dict>
-<!---------------------------------------------------
-	Coma - CCpp
------------------------------------------------------>
+<!-- Coma - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\,</string>
 			<key>name</key>
 			<string>coma.ccpp</string>
 		</dict>
-<!---------------------------------------------------
-	Semicolon End of Line (exceptions)- CCpp
------------------------------------------------------>
+<!-- Semicolon End of Line (exceptions)- CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\;(?=(\s*|\t*)\/\/\s*.*)</string>
 			<key>name</key>
 			<string>semi_colon.eol.ccpp</string>
 		</dict>
-<!---------------------------------------------------
-	Semicolon End of Line - CCpp
------------------------------------------------------>
+<!-- Semicolon End of Line - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\;(?=(\s*)(\r|\n))</string>
@@ -806,18 +702,14 @@
 			<key>name</key>
 			<string>semi_colon.eol.ccpp</string>
 		</dict>
-<!---------------------------------------------------
-	Semicolon Block - CCpp
------------------------------------------------------>
+<!-- Semicolon Block - CCpp -->
 		<dict>
 			<key>match</key>
 			<string>\;</string>
 			<key>name</key>
 			<string>semi_colon.ccpp</string>
 		</dict>
-<!--------------------------------------
-	String Quoted Double - C
----------------------------------------->
+<!-- String Quoted Double - C -->
 		<dict>
 			<key>begin</key>
 			<string>"</string>
@@ -853,9 +745,7 @@
 				</dict>
 			</array>
 		</dict>
-<!--------------------------------------
-	String Quoted Single - C
----------------------------------------->
+<!-- String Quoted Single - C -->
 		<dict>
 			<key>begin</key>
 			<string>'</string>
@@ -887,9 +777,7 @@
 				</dict>
 			</array>
 		</dict>
-<!--------------------------------------
-	Meta Preprocessor Macro C - C
----------------------------------------->
+<!-- Meta Preprocessor Macro C - C -->
 		<dict>
 			<key>begin</key>
 			<string>(?x)
@@ -962,9 +850,7 @@
 				</dict>
 			</array>
 		</dict>
-<!--------------------------------------
-	Meta Preprocessor Diagnostic - C
----------------------------------------->
+<!-- Meta Preprocessor Diagnostic - C -->
 		<dict>
 			<key>begin</key>
 			<string>^\s*#\s*(error|warning)\b</string>
@@ -990,9 +876,7 @@
 				</dict>
 			</array>
 		</dict>
-<!--------------------------------------
-	Meta Preprocessor Include - C
----------------------------------------->
+<!-- Meta Preprocessor Include - C -->
 		<dict>
 			<key>begin</key>
 			<string>^\s*#\s*(include|import)\b\s+</string>
@@ -1066,9 +950,7 @@
 				</dict>
 			</array>
 		</dict>
-<!--------------------------------------
-	Meta Preprocessor - C
----------------------------------------->
+<!-- Meta Preprocessor - C -->
 		<dict>
 			<key>begin</key>
 			<string>^\s*#\s*(define|defined|elif|else|if|ifdef|ifndef|line|pragma|undef)\b</string>
@@ -1095,24 +977,15 @@
 			</array>
 		</dict>
 		</array>
-<!----------------------------------------------------------------------------
-	C/C++ Native Features - End
------------------------------------------------------------------------------>
-<!-------------------------------------------------------------------------
---
--- Here is the beginning of the repositories which could be include in
--- patterns.
---
---
---------------------------------------------------------------------------->
+<!-- C/C++ Native Features - End -->
+<!--
+Here is the beginning of the repositories which could be include in
+patterns.
+-->
 	<key>repository</key>
 	<dict>
-<!----------------------------------------------------------------------------
-	C/C++ Native Features - Begin
------------------------------------------------------------------------------>
-<!--------------------------------------
-	Comments - C
----------------------------------------->
+<!-- C/C++ Native Features - Begin -->
+<!-- Comments - C -->
 		<key>comments</key>
 		<dict>
 			<key>patterns</key>
@@ -1194,9 +1067,7 @@
 				</dict>
 			</array>
 		</dict>
-<!------------------------------------------
-	Constant Character Escape - C
---------------------------------------------->
+<!-- Constant Character Escape - C -->
 		<key>string_escaped_char</key>
 		<dict>
 			<key>patterns</key>
@@ -1215,9 +1086,7 @@
 				</dict>
 			</array>
 		</dict>
-<!-------------------------------------------
-	Constant Other Placeholder - C
----------------------------------------------->
+<!-- Constant Other Placeholder - C -->
 		<key>string_placeholder</key>
 		<dict>
 			<key>patterns</key>
@@ -1244,9 +1113,7 @@
 				</dict>
 			</array>
 		</dict>
-<!----------------------
-	Disabled - C
-------------------------->
+<!-- Disabled - C -->
 		<key>disabled</key>
 		<dict>
 			<key>begin</key>
@@ -1267,9 +1134,7 @@
 				</dict>
 			</array>
 		</dict>
-<!----------------------
-	Pragma Mark - C
-------------------------->
+<!-- Pragma Mark - C -->
 		<key>pragma-mark</key>
 		<dict>
 			<key>captures</key>
@@ -1295,9 +1160,7 @@
 			<key>name</key>
 			<string>meta.section</string>
 		</dict>
-<!-------------------------------------------
-	Preprocessor Rule Disabled - C
----------------------------------------------->
+<!-- Preprocessor Rule Disabled - C -->
 		<key>preprocessor-rule-disabled</key>
 		<dict>
 			<key>begin</key>
@@ -1371,9 +1234,7 @@
 				</dict>
 			</array>
 		</dict>
-<!-------------------------------------------
-	Preprocessor Rule Enabled - C
----------------------------------------------->
+<!-- Preprocessor Rule Enabled - C -->
 		<key>preprocessor-rule-enabled</key>
 		<dict>
 			<key>begin</key>
@@ -1447,9 +1308,7 @@
 				</dict>
 			</array>
 		</dict>
-<!-------------------------------------------
-	Preprocessor Rule Other - C
----------------------------------------------->
+<!-- Preprocessor Rule Other - C -->
 		<key>preprocessor-rule-other</key>
 		<dict>
 			<key>begin</key>
@@ -1477,9 +1336,7 @@
 				</dict>
 			</array>
 		</dict>
-<!----------------------------------------------------------------------------
-	C/C++ Native Features - End
------------------------------------------------------------------------------>		</dict>
+<!-- C/C++ Native Features - End -->		</dict>
 	<key>scopeName</key>
 	<string>source.c, source.c++</string>
 	<key>uuid</key>
