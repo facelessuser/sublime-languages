@@ -1239,8 +1239,8 @@
 			<key>match</key>
 			<string>(?x)(?i)
 			\b(?:
-				(?:ht|f)tps?://(?:(?:[a-z\d\-_]+(?:\.[a-z\d\-._]+)+)|localhost)|
-				(w{3}\.)[a-z\d\-_]+(?:\.[a-z\d\-._]+)+
+				(?:ht|f)tps?://(?:(?:[a-z\d][a-z\d\-_]*(?:\.[a-z\d\-._]+)+)|localhost)|
+				(w{3}\.)[a-z\d][a-z\d\-_]*(?:\.[a-z\d\-._]+)+
 			)
 			/?[a-z\d\-._(){}\[\]?,!'/+&amp;@%$#=:"|~;]*
 			[a-z\d\-_~/#@$*+=]
@@ -1251,7 +1251,7 @@
 		<key>autolink-email</key>
 		<dict>
 			<key>match</key>
-			<string>(?i)((?:[\-+\w]([\w\-+]|\.(?!\.))+)@(?:[\w\-]+\.)(([\w\-]|(?&lt;!\.)\.(?!\.))*)[a-z](?![\d\-_@]))</string>
+			<string>(?i)((?&lt;![/-_@\w])(?:[\-+\w]([\w\-+]|\.(?!\.))*)(?&lt;!\.)@(?:[\w\-]+\.)(([\w\-]|(?&lt;!\.)\.(?!\.))*)[a-z]\b(?![\d\-_@]))</string>
 			<key>name</key>
 			<string>markup.underline.link.email.markdown.github</string>
 		</dict>
