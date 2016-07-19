@@ -170,7 +170,7 @@ contexts:
       scope: keyword.operator.compound.ccpp
     - match: '\?|\:'
       scope: keyword.operator.conditional.ccpp
-    - match: \!\s*(?=\w)
+    - match: \!\s*(?=\w|\()
       scope: keyword.operator.logical.ccpp
     - match: \&\&|\|\|
       scope: keyword.operator.logical.ccpp
